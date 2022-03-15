@@ -1,0 +1,11 @@
+\begin{itshape}
+What this project (focusing on Stage 1) is about, including the goal of the project and Stage 1
+\end{itshape}
+
+\begin{itemize}
+    \item Design + implement a plain/vanilla client-side simulator acting as a simple job dispatcher
+    \item Implements ds-sim simulation protocol - connects server-side simulator (ds-server), receives jobs (one at a time) and schedules them
+    \item Implements Largest-Round-Robin (LRR) job dispatcher / scheduler
+        \subitem Largest server = most CPU cores
+        \subitem Equal servers - pick first one listed in config file or ds-system.xml
+\end{itemize}

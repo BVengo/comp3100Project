@@ -1,9 +1,12 @@
 \documentclass{article}
 
 \usepackage[english]{babel}
+\usepackage{csquotes}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[backend=biber,sorting=none,style=numeric]{biblatex}
+
+\usepackage{subfiles}
 
 \addbibresource{references.bib}
 
@@ -13,31 +16,18 @@
 \begin{document}
 
 \maketitle
+
 \section{Introduction - 1/2 Page}
-\begin{itshape}
-What this project (focusing on Stage 1) is about, including the goal of the project and Stage 1
-\end{itshape}
+\subfile{sections/introduction}
 
-\section{System Overview}
-\begin{itshape}
-High-level description of the system (both client-side simulator and server-side simulator with the focus being your client-side simulator), preferably, with a figure (your own, not one in the ds-sim user guide) showing the workflow/working of the system
-\end{itshape}
+\section{System Overview - 1/2 Page}
+\subfile{sections/overview}
 
-\section{Design}
-\begin{itshape}
-Design philosophy, considerations and constraints, functionalities of each simulator component focusing on the client-side simulator
-\end{itshape}
+\section{Design - 1 Page}
+\subfile{sections/design}
 
-\section{Implementation}
-\begin{itshape}
-brief description of any implementation specific information including
-technologies, techniques, software libraries and data structures used. How each of components/functions
-of your simulator is implemented
-\end{itshape}
-\section{References}
-\begin{itshape}
-References including your project git repository link, e.g., GitHub and Bitbucket
-\end{itshape}
+\section{Implementation - 2 Pages}
+\subfile{sections/implementation}
 
 \raggedright
 \nocite{*}
