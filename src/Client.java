@@ -4,7 +4,6 @@ import java.io.*;
 
 public class Client {
     static final int NUM_ARGS = 2;
-    static Client client;
 
     Socket s;
     BufferedReader din;
@@ -13,7 +12,7 @@ public class Client {
 
     public static void main(String[] args) {
         if(args.length < NUM_ARGS) {
-            System.out.println("Please provide a host name (localhost) and port number (6666)");
+            System.out.println("Please provide a host name and port number");
             System.exit(0);
         } else if(args.length > NUM_ARGS) {
             System.out.println("Too many arguments supplied! Only the first " + NUM_ARGS + " will be used.");
@@ -82,7 +81,61 @@ public class Client {
 
     public void runJobs() throws IOException {
         // This is where the client will be sent jobs to distribute
-        handleMessage("REDY");
+        String reply = handleMessage("REDY");
+        String[] splitReply = reply.split(" ");
+
+        if(!splitReply[0].equals("JOBN")) {
+            // TODO: Handle other commands at this point, or branch for different commands
+            return;
+        }
+        // See Job.java for descriptions
+        int submitTime  = Integer.parseInt(splitReply[1]);
+        int jobId       = Integer.parseInt(splitReply[2]);
+        int estRuntime  = Integer.parseInt(splitReply[3]);
+        int core        = Integer.parseInt(splitReply[4]);
+        int memory      = Integer.parseInt(splitReply[5]);
+        int disk        = Integer.parseInt(splitReply[6]);
+
+        Job job = new Job(submitTime, jobId, estRuntime, core, memory, disk);
+
+        System.out.println(job);
+
+        // TODO: Example log only has capable, but I need to explore further
+        reply = handleMessage("GETS Capable " + core + " " + memory + " " + disk);
+        splitReply = reply.split(" ");
+
+        if(!splitReply[0].equals("DATA")) {
+            // TODO: Handle other commands at this point, or branch for different commands
+            return;
+        }
+
+        int numJobs         = Integer.parseInt(splitReply[1]);
+        int messageLength   = Integer.parseInt(splitReply[2]);
+
+        Server[] servers = new Server[numJobs];
+
+        reply = handleMessage("OK");
+        splitReply = reply.split(" ");
+        
+        for(int i = 0; i < numJobs; i++) {
+            String serverName   = splitReply[0];
+            int serverId        = Integer.parseInt(splitReply[1]);
+            String serverState  = splitReply[2];
+            int curStartTime    = Integer.parseInt(splitReply[3]);
+            core                = Integer.parseInt(splitReply[4]);
+            memory              = Integer.parseInt(splitReply[5]);
+            disk                = Integer.parseInt(splitReply[6]);
+            int wJobs           = Integer.parseInt(splitReply[7]);
+            int rJobs           = Integer.parseInt(splitReply[8]);
+
+            servers[i] = new Server(serverName, serverId, serverState, curStartTime, core, memory, disk, wJobs, rJobs);
+            
+            if(i != numJobs - 1) {
+                reply = din.readLine();
+            }
+        }
+
+        handleMessage("OK");
         handleMessage("QUIT");
     }
 
