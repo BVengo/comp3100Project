@@ -12,7 +12,8 @@
             "projectName": "comp3100Project_ddf2596e",
             "args": [
                 "localhost", 
-                "50000"
+                "50000",
+                "lrr"
             ]
         }
     ]

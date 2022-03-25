@@ -121,6 +121,10 @@ SENT OK
 RCVD REDY
 t:        177 job     5 on # 0 of server super-silk COMPLETED
 SENT JCPL 177 5 super-silk 0
+    - #1    : endTime
+    - #2    : jobId
+    - #3    : serverType
+    - #4    : serverId
 RCVD REDY
 SENT JOBN 198 6 1074 4 4000 7600
 RCVD GETS Capable 4 4000 7600

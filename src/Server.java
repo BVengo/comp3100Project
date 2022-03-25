@@ -1,79 +1,79 @@
-public class Server implements Comparable<Server> {
-    String serverName;
-    int serverId;
-    String serverState;
-    int curStartTime;
-    int core;
-    int memory;
-    int disk;
-    int wJobs;
-    int rJobs;
+import java.util.HashMap;
 
-    String[] statePriority = {"idle", "inactive", "booting", "active"};
+public class Server {
+    String serverName;
+    int serverId        = 0;
+    String serverState  = "inactive";
+    int curStartTime    = -1;
+    int totalCores      = 0;
+    int availableCores  = 0;
+    int totalMemory     = 0; 
+    int availableMemory = 0;
+    int totalDisk       = 0;
+    int availableDisk   = 0;
+    int wJobs           = 0;
+    int rJobs           = 0;
+    int cJobs           = 0;
+
+    HashMap<Integer, Job> jobs = new HashMap<Integer, Job>();
+
+    String[] statePriority = {"idle", "inactive", "active", "booting"};
 
     public Server() {};
-
+    
     public Server(String serverName, int serverId, String serverState, int curStartTime, int core, int memory, int disk, int wJobs, int rJobs) {
         this.serverName = serverName;
         this.serverId = serverId;
         this.serverState = serverState;
         this.curStartTime = curStartTime;
-        this.core = core;
-        this.memory = memory;
-        this.disk = disk;
+        this.totalCores = core;
+        this.availableCores = core;
+        this.totalMemory = memory;
+        this.availableMemory = memory;
+        this.totalDisk = disk;
+        this.availableDisk = disk;
         this.wJobs = wJobs;
         this.rJobs = rJobs;
     }
+    
+    /**
+     * Adds a job to be completed
+     * @param job The job to be completed
+     */ 
+    public void addJob(Job job) {
+        jobs.put(job.jobId, job);
+    }
 
+    /**
+     * Increment the completed jobs
+     */
+    public void completeJob(int jobId, int runTime) {
+        if(!jobs.containsKey(jobId)) {
+            // TODO: Handle this gracefully. It shouldn't trigger though
+        }
+
+        jobs.get(jobId).complete(runTime);
+        cJobs++;
+    }
+
+    /**
+     * Provides the unique server key, made up of the server name and id.
+     * @return A string of the server key
+     */
     public String getKey() {
         return serverName + "-" + serverId;
     }
 
+    /**
+     * Returns a nicely formatted string for printing that summarises the object variables
+     * @return A formatted string for printing
+     */
     public String toString() {
-        return getKey() + ", " + serverName + ", " + serverId + ", " + serverState + ", " + curStartTime + 
-                          ", " + core + ", " + memory + ", " + disk + ", " + wJobs + ", " + rJobs;
-    }
-
-    @Override
-    public int compareTo(Server o) {
-        int c;
-        
-        // Prioritise less running jobs
-        c = Integer.compare(o.rJobs, rJobs);
-        if(c != 0) {
-            return c;
-        }
-        
-        // Prioritise less working jobs
-        c = Integer.compare(o.wJobs, wJobs);
-        if(c != 0) {
-            return c;
-        }
-
-        int idx1 = -1;
-        int idx2 = -1;
-
-        for(int i = 0; i < statePriority.length; i++) {
-            if(statePriority[i].equals(this.serverState)) {
-                idx1 = i;
-            }
-
-            if(statePriority[i].equals(o.serverState)) {
-                idx2 = i;
-            }
-        }
-
-        // Prioritise in array from left to right
-        c = Integer.compare(idx2, idx1);
-        if(c != 0) {
-            return c;
-        }
-        
-        // Prioritise smaller startTime
-        c = Integer.compare(o.curStartTime, curStartTime);
-        if(c != 0) {
-            return c;
-        }
-        return 0;
+        return "key: " + getKey() + ", name: " + serverName + ", id: " + serverId + "\n" +
+                "state: " + serverState + ", startTime: " + curStartTime + "\n" + 
+                "total cores: " + totalCores + ", available cores: " + availableCores + "\n" +
+                "total memory: " + totalMemory + ", available memory: " + availableMemory + "\n" +
+                "total disk: " + totalDisk + ", available disk: " + availableDisk + "\n" +
+                "working jobs: " + wJobs + ", running jobs: " + rJobs;
     }
 }
