@@ -1,3 +1,7 @@
-\begin{itshape}
-High-level description of the system (both client-side simulator and server-side simulator with the focus being your client-side simulator), preferably, with a figure (your own, not one in the ds-sim user guide) showing the workflow/working of the system
-\end{itshape}
+In this system the ds-server simulates job submissions and job executions by servers, whilst the client handles the job scheduling logic. First ds-server needs to open a socket for the client to connect to (defaulting to port 50000), and then the client must connect and authenticate before any scheduling of jobs can begin.\\
+\vspace{.2cm}
+The flow of communication between the two whilst using LRR is outlined in the flowchart below.
+\begin{center}
+    \includegraphics[scale=0.7]{Communication Flowchart.png}
+\end{center}
+

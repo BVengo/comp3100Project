@@ -1,26 +1,32 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 
 \usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[backend=biber,sorting=none,style=numeric]{biblatex}
-
 \usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage{titling}
 
+\graphicspath{ {./assets/} }
 \addbibresource{references.bib}
+
+\setlength{\droptitle}{-5em}
 
 \title{COMP3100 - Stage 1}
 \author{Benjamin van de Vorstenbosch - 45898405}
+
+\raggedright
 
 \begin{document}
 
 \maketitle
 
-\section{Introduction - 1/2 Page}
+\section{Introduction}
 \subfile{sections/introduction}
 
-\section{System Overview - 1/2 Page}
+\section{System Overview}
 \subfile{sections/overview}
 
 \section{Design - 1 Page}
