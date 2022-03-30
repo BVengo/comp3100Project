@@ -1,3 +1,4 @@
+import java.rmi.UnexpectedException;
 import java.util.HashMap;
 
 public class Server {
@@ -47,10 +48,10 @@ public class Server {
     /**
      * Increment the completed jobs
      */
-    public void completeJob(int jobId, int runTime) {
+    public void completeJob(int jobId, int runTime) throws UnexpectedException {
         if(!jobs.containsKey(jobId)) {
             // This should never trigger, hence the hard exit.
-            Client.terminate("Could not find job " + jobId + ". This should never happen!");
+            throw new UnexpectedException("Completed job could not be found.");
         }
 
         jobs.get(jobId).complete(runTime);

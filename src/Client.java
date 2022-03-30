@@ -1,17 +1,10 @@
-import java.net.*;
+import java.io.IOException;
+import java.rmi.UnexpectedException;
 import java.util.HashMap;
-import java.io.*;
-
 
 public class Client {
     static final int NUM_ARGS = 3;
-
-    static Socket s;
-    static BufferedReader din;
-    static DataOutputStream dout;
-
     static Algorithm algorithm;
-
     static HashMap<String, Server> servers = new HashMap<String, Server>();
 
     public static void main(String[] args) {
@@ -29,46 +22,24 @@ public class Client {
             throw new IllegalArgumentException("Port must be between 1024 and 65535 (inclusive).");
         }
 
-        algorithm = Algorithm.getAlgorithm(args[2]);
+        algorithm = AlgorithmGenerator.getAlgorithm(args[2]);
                
         try{
-            connect(hostname, port);
+            Connection.connect(hostname, port);
             authenticateConnection();
             startScheduling();            
-            disconnect();
+            Connection.disconnect();
 
         } catch(Exception e) {
-            System.out.println(e);
-        }       
-    }
-
-    /**
-     * Connect to a server
-     * @param hostname Hostname of the server. Use localhost for testing ds-server
-     * @param port Port the server is listening on. 50000 is the default for ds-server
-     * @throws IOException
-     */
-    static void connect(String hostname, int port) throws IOException {
-        s = new Socket(hostname, port);
-        din = new BufferedReader(new InputStreamReader(s.getInputStream()));  
-        dout = new DataOutputStream(s.getOutputStream());
-    }
-
-    /**
-     * Close the connection to the server gracefully
-     * @throws Exception
-     */
-    static void disconnect() throws IOException {
-        handleMessage("QUIT", "QUIT");
-        din.close();
-        s.close();
+            System.err.println(e);
+        }
     }
 
     /**
      * Send the authentication messages to the server to confirm connection.
-     * @throws Exception
+     * @throws IOException On message failure
      */
-    public static void authenticateConnection() {
+    public static void authenticateConnection() throws IOException {
 
         String messages[] = {
             "HELO", 
@@ -76,19 +47,21 @@ public class Client {
         };
 
         for(String m : messages) {
-            handleMessage(m, "OK");
+            Connection.handleMessage(m, "OK");
         }
     }
 
     /**
      * Tells the server that the client is ready for commands, and calls the appropriate function in response
      * @return TRUE if the server still has jobs to be managed. FALSE if the scheduling has been completed.
+     * @throws IOException On message failure
+     * @throws UnexpectedException On job identification failure
      */
-    public static void startScheduling() {
+    public static void startScheduling() throws IOException, UnexpectedException {
         boolean toContinue = true;
         
         while(toContinue) {
-            String reply = handleMessage("REDY");
+            String reply = Connection.handleMessage("REDY");
             String[] splitReply = reply.split(" ");
 
             String command = splitReply[0];
@@ -115,7 +88,7 @@ public class Client {
     /**
      * Generates a Job from the split JOBN command sent by ds-server
      * @param jobDetails
-     * @return
+     * @return a Job object
      */
     public static Job getJobFromArray(String[] jobDetails) {
         int submitTime  = Integer.parseInt(jobDetails[1]);
@@ -168,65 +141,5 @@ public class Client {
         }
         
         return(server);
-    }
-
-    /**
-     * Sends off a message to the server, and returns the reply provided
-     * @param message The message to be sent
-     * @return The reply from the server
-     * @throws Exception
-     */
-    public static String handleMessage(String message) {
-        String receivedMessage = "";
-
-        try {
-            if(!message.equals("")) {
-                dout.write(formatOutput(message));
-                dout.flush();
-            }
-            
-            receivedMessage = din.readLine();
-        }
-        catch(IOException e) {
-            terminate("Could not send or read a message! This implies the send message was incorrect.");
-        }
-        
-        return receivedMessage;
-    }
-
-    /**
-     * Terminates the program due to an error with a known reason.
-     * @param e An error message
-     */
-    public static void terminate(String e) {
-        System.err.println(e);
-        System.exit(0);
-    }
-
-    /**
-     * Sends off a message to the server, and returns the reply provided
-     * Errors if the expected response isn't received
-     * @param message The message to be sent
-     * @param expectedResponse The response expected from the server
-     * @return The reply received from the server
-     * @throws Exception
-     */
-    public static String handleMessage(String message, String expectedResponse) {
-        String reply = handleMessage(message);
-
-        if(!reply.equals(expectedResponse)) {
-            terminate("Didn't received an expected reply! This implies something incorrect was sent");
-        }
-
-        return reply;
-    }
-
-    /**
-     * Formats string to be sent to ds-server
-     * @param s The string that needs formatting
-     * @return The string as a byte array, ended with a newline
-     */
-    public static byte[] formatOutput(String s) {
-        return (s + "\n").getBytes();
     }
 }

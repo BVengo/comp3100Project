@@ -1,12 +1,14 @@
-public class LRRAlgorithm extends Algorithm {
-    @Override
-    public void scheduleJob(Job job) {
-        String reply = Client.handleMessage("GETS Capable " + job.core + " " + job.memory + " " + job.disk);
+import java.io.IOException;
+
+public class LRRAlgorithm implements Algorithm {
+
+    public void scheduleJob(Job job) throws IOException {
+        String reply = Connection.handleMessage("GETS Capable " + job.core + " " + job.memory + " " + job.disk);
         String[] dataDetails = reply.split(" ");
 
         int numServers = Integer.parseInt(dataDetails[1]);
         
-        reply = Client.handleMessage("OK");
+        reply = Connection.handleMessage("OK");
 
         // Empty server has cores, wJobs, and rJobs initialised to 0
         Server lServer = new Server();
@@ -24,13 +26,13 @@ public class LRRAlgorithm extends Algorithm {
             }
             
             if(i != numServers - 1) {
-                reply = Client.handleMessage("");
+                reply = Connection.handleMessage("");
             }
         }
 
-        Client.handleMessage("OK", ".");
+        Connection.handleMessage("OK", ".");
 
         lServer.addJob(job);
-        Client.handleMessage("SCHD " + job.jobId + " " + lServer.serverName + " " + lServer.serverId, "OK");
+        Connection.handleMessage("SCHD " + job.jobId + " " + lServer.serverName + " " + lServer.serverId, "OK");
     }
 }
