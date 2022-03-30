@@ -6,7 +6,7 @@ public abstract class Algorithm {
     public static Algorithm getAlgorithm(String a) {
         AlgorithmType type;
         try {
-            type = AlgorithmType.valueOf(a);
+            type = AlgorithmType.valueOf(a.toUpperCase());
         } catch(IllegalArgumentException e) {
             System.out.println("Invalid algorithm type. Defaulting to LRR.");
             type = AlgorithmType.LRR;
