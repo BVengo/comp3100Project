@@ -19,7 +19,7 @@ public class LRRAlgorithm extends Algorithm {
             int sJobs = cServer.wJobs + cServer.rJobs + cServer.cJobs;
             int lsJobs = lServer.wJobs + lServer.rJobs + lServer.cJobs;
 
-            if(cServer.totalCores > lServer.totalCores || (cServer.totalCores == lServer.totalCores && sJobs < lsJobs)) {
+            if(cServer.totalCores > lServer.totalCores || (cServer.serverName.equals(lServer.serverName) && sJobs < lsJobs)) {
                 lServer = cServer;
             }
             
