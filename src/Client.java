@@ -25,7 +25,6 @@ public class Client {
         String hostname = args[0];
         int port = Integer.parseInt(args[1]);
 
-        // Port checking
         if(port < 1024 || port > 65535) {
             throw new IllegalArgumentException("Port must be between 1024 and 65535 (inclusive).");
         }
@@ -112,7 +111,7 @@ public class Client {
             }
         }
     }
-    
+
     /**
      * Generates a Job from the split JOBN command sent by ds-server
      * @param jobDetails
