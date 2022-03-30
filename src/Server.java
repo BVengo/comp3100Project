@@ -49,7 +49,8 @@ public class Server {
      */
     public void completeJob(int jobId, int runTime) {
         if(!jobs.containsKey(jobId)) {
-            // TODO: Handle this gracefully. It shouldn't trigger though
+            // This should never trigger, hence the hard exit.
+            Client.terminate("Could not find job " + jobId + ". This should never happen!");
         }
 
         jobs.get(jobId).complete(runTime);
@@ -63,6 +64,7 @@ public class Server {
     public String getKey() {
         return serverName + "-" + serverId;
     }
+    
 
     /**
      * Returns a nicely formatted string for printing that summarises the object variables

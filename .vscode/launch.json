@@ -9,9 +9,16 @@
             "name": "Launch Client",
             "request": "launch",
             "mainClass": "Client",
+            "projectName": "comp3100Project_4a36bd06"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client",
+            "request": "launch",
+            "mainClass": "Client",
             "projectName": "comp3100Project_ddf2596e",
             "args": [
-                "localhost", 
+                "localhost",
                 "50000",
                 "lrr"
             ]
