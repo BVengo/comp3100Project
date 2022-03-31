@@ -22,7 +22,7 @@ public class Client {
             throw new IllegalArgumentException("Port must be between 1024 and 65535 (inclusive).");
         }
 
-        algorithm = AlgorithmGenerator.getAlgorithm(args[2]);
+        algorithm = AlgorithmFactory.getAlgorithm(args[2]);
                
         try{
             Connection.connect(hostname, port);
@@ -39,7 +39,7 @@ public class Client {
      * Send the authentication messages to the server to confirm connection.
      * @throws IOException On message failure
      */
-    public static void authenticateConnection() throws IOException {
+    private static void authenticateConnection() throws IOException {
 
         String messages[] = {
             "HELO", 
@@ -57,7 +57,7 @@ public class Client {
      * @throws IOException On message failure
      * @throws UnexpectedException On job identification failure
      */
-    public static void startScheduling() throws IOException, UnexpectedException {
+    private static void startScheduling() throws IOException, UnexpectedException {
         boolean toContinue = true;
         
         while(toContinue) {

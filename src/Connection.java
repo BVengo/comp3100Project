@@ -12,7 +12,7 @@ public abstract class Connection {
      * @param port Port the server is listening on. 50000 is the default for ds-server
      * @throws IOException On connection failure
      */
-    static void connect(String hostname, int port) throws IOException {
+    public static void connect(String hostname, int port) throws IOException {
         s = new Socket(hostname, port);
         din = new BufferedReader(new InputStreamReader(s.getInputStream()));  
         dout = new DataOutputStream(s.getOutputStream());
@@ -22,7 +22,7 @@ public abstract class Connection {
      * Close the connection to the server gracefully
      * @throws Exception
      */
-    static void disconnect() throws IOException {
+    public static void disconnect() throws IOException {
         handleMessage("QUIT", "QUIT");
         din.close();
         s.close();
@@ -66,7 +66,7 @@ public abstract class Connection {
      * @param s The string that needs formatting
      * @return The string as a byte array, ended with a newline
      */
-    public static byte[] formatOutput(String s) {
+    private static byte[] formatOutput(String s) {
         return (s + "\n").getBytes();
     }
 }
