@@ -1,3 +1,34 @@
-\begin{itshape}
-Design philosophy, considerations and constraints, functionalities of each simulator component focusing on the client-side simulator
-\end{itshape}
+\subsection{Design Philosophy}
+This project is designed to successfully connect to the ds-sim server and schedule jobs according to the requested scheduling algorithm. To make this project meet these requirements and remain maintainable, it must follow the SOLID design principles \cite{solid}. Each principle is outlined below, with a brief description of what they entail and why it is necessary.
+
+\begin{labeling}{}
+    \item[\textbf{Single Responsibility Principle}] - Every module in this project must be designed for a single piece of functionality, and all modules should be relevant to the class they are in. This properly separates out logic in the program, making it more scale-able and easier to maintain over time.
+    \item[\textbf{Open-Closed Principle}] - This project should be easily added to and scaled up, without needing to modify the existing code. This results in the project always running as expected, even as more functionality is added over time.
+    \item[\textbf{Liskov Substitution Principle}] Similar to the previous principle, the Liskov Substitution Principle requires any derived classes to maintain the expected base functionality of the program. This enables the project to always runs as expected.
+    \item[\textbf{Interface Segregation Principle}] - Interfaces should have specific purposes, rather than having large all-purpose interfaces. This assists with separation of logic, similar to the Single Responsibility Principle.
+    \item[\textbf{Dependency Inversion Principle}] - Lower level modules should have a level of abstraction for higher level modules to use. This will result in fewer mistakes made during development, and consistent behaviour between higher level modules.
+\end{labeling}
+
+In addition to these principles, the code must be modular, understandable, and easy to modify. This requires commenting, appropriate variable and class names, and proper separation of logic.
+
+
+\subsection{Considerations and Constraints}
+Since DS-Sim has only been confirmed to work on Ubuntu, the client must also be run on Ubuntu. A new compilation of ds-sim must be provided to work on other systems, however this client won't be tested on them and therefore may not work since the project specifications only require it to function on the one system. \\
+
+\vspace{.2cm}
+There are also some limitations around ports that this client is able to connect to. Valid port numbers range from 0 to 65535, however ports 0-1023 are reserved system ports. Therefore the client cannot be allowed to connect to them. \\
+
+\vspace{.2cm}
+Finally, missing resources for scheduling or failure of jobs usually needs to be considered. However this project is designed with the assumption that, provided the client schedules a job correctly, neither of these issues will appear (as mentioned in the project specifications).
+
+
+\subsection{Functionalities of Simulator Components}
+The client must be able to handle various pieces of functionality to run successfully. This includes:
+\begin{itemize}
+    \item Connecting to different hosts and ports
+    \item Communicating with ds-server by both sending and receiving messages.
+    \item Interpreting incoming messages and sending appropriate responses as outlined by the ds-sim protocol.
+    \item Authentication with the ds-server
+    \item Handling of different servers and jobs so that it can schedule them appropriately
+    \item Implementation of the LRR algorithm (Stage 1). For future stages, more algorithms need to be implemented.
+\end{itemize}

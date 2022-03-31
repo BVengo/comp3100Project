@@ -1,3 +1,4 @@
 Given a discrete-event simulator ds-sim \cite{ds-sim}, a corresponding client needs to be designed and implemented that can communicate with ds-sim in a client-server model. The role of the client is to schedule and dispatch jobs provided to it by the server using various scheduling algorithms. \\
+
 \vspace{.2cm}
-For stage 1 of this project, the client must implement the Largest Round-Robin (LRR) scheduling algorithm. After receiving a job, the client must decide which server it needs to be scheduled to. In LRR, the server chosen is the one with the most CPU cores total. If there are multiple equal servers, then the client needs to pick the first one that is provided.
+The aim of this report is to describe and explain my implementation of the client, as well how the ds-sim protocol is used for communication. It will provide a system overview, design description, and implementation of the design in my client. The client project can be found on Github \cite{github}.

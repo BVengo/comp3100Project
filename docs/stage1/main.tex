@@ -1,43 +1,102 @@
-\documentclass[10pt]{article}
+\documentclass[a4paper]{article}
 
-\usepackage[english]{babel}
-\usepackage{csquotes}
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\usepackage[backend=biber,sorting=none,style=numeric]{biblatex}
-\usepackage{subfiles}
-\usepackage{graphicx}
-\usepackage{titling}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\usepackage{charter} % Use the Charter font
+\usepackage[utf8]{inputenc} % Use UTF-8 encoding
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage{float} % Improved interface for floating objects
+\usepackage[final, colorlinks = true, 
+            linkcolor = black, 
+            citecolor = black]{hyperref} % For hyperlinks in the PDF
+
+\usepackage{graphicx, multicol} % Enhanced support for graphics
 \graphicspath{ {./assets/} }
+
+\usepackage{booktabs, array} % Enhances quality of tables
+\usepackage{subfiles} % For inserting in text from other files
+\usepackage{scrextend} % Allows lists with leading text instead of bullets
+\usepackage{csquotes} % Context sensitive quotation facilities
+
+\usepackage[yyyymmdd]{datetime} % Uses YEAR-MONTH-DAY format for dates
+\renewcommand{\dateseparator}{-} % Sets dateseparator to '-'
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{}\renewcommand{\headrulewidth}{0pt} % Blank out the default header
+\fancyfoot[L]{School of Computing, Macquarie University} % Custom footer text
+\fancyfoot[C]{} % Custom footer text
+\fancyfoot[R]{\thepage} % Custom footer text
+
+\usepackage{comment}
+\newcommand{\note}[1]{\marginpar{\scriptsize \textcolor{red}{#1}}} % Enables comments in red on margin
+
+\usepackage[backend=biber,sorting=nyt,style=ieee]{biblatex}
 \addbibresource{references.bib}
 
-\setlength{\droptitle}{-5em}
-
-\title{COMP3100 - Stage 1}
-\author{Benjamin van de Vorstenbosch - 45898405}
+%----------------------------------------------------------------------------------------
+%	FORMATTING
+%----------------------------------------------------------------------------------------
+\addtolength{\hoffset}{-2.25cm}
+\addtolength{\textwidth}{4.5cm}
+\addtolength{\voffset}{-3.25cm}
+\addtolength{\textheight}{5cm}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0in}
 
 \raggedright
 
 \begin{document}
 
-\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{COMP3100 Project Report} % Article title
+\fancyhead[C]{}
+\hrule \medskip % Upper rule
+\begin{minipage}{1\textwidth} % Center of title section
+\centering 
+\large % Title text size
+Project report: Stage 1\\ % Assignment title and number
+COMP3100 Distributed Systems, S2, 2022\\
+\normalsize % Subtitle text size
+SID: 45898405, Name: Benjamin\_ van\_de\_Vorstenbosch
+%%%%\\ % Assignment subtitle
+\end{minipage}
+\medskip\hrule % Lower rule
+\bigskip
 
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
 \section{Introduction}
 \subfile{sections/introduction}
 
 \section{System Overview}
 \subfile{sections/overview}
 
-\section{Design - 1 Page}
+\newpage
+
+\section{Design}
 \subfile{sections/design}
 
-\section{Implementation - 2 Pages}
+\newpage
+
+\section{Implementation}
 \subfile{sections/implementation}
 
-\raggedright
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
 \nocite{*}
 \printbibliography[]
 
+%----------------------------------------------------------------------------------------
 
 \end{document}
