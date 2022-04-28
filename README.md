@@ -6,13 +6,22 @@ Name: Benjamin van de Vorstenbosch
 
 This client is designed to connect to the ds-sim server from the [ds-sim repository](https://github.com/distsys-MQ/ds-sim) as a solution to the COMP3100 unit assignment.
 
-For convenience, the pre-compiled ds-sim and ds-client files can be found in the `tests` folder.
+**Directories**
+- `build`: compiled java class files
+- `configs`: server configuration XML files for testing
+- `ds-sim`: precompiled DS-Sim files
+- `src`: project source files
+- `tests`: test log outputs
 
-To compile from the `src` folder into the `tests` folder, use the command 
+To compile from the root folder into the `build` folder, use the command 
 ```
-javac -d ../tests *.java
+./compile.sh
 ```
-The main class is 'Client'. Therefore, to run all tests from the `tests` folder (after compilation), use the command 
+To run all tests from the root folder (after compilation), use the command 
 ```
-./S1Tests-wk6.sh Client.class -n localhost 50000 lrr
+./tests.sh Client.class -n localhost 50000 <algorithm>
+```
+for example
+```
+./tests.sh Client.class -n localhost 50000 lrr
 ```
