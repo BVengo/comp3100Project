@@ -25,3 +25,5 @@ for example
 ```
 ./tests.sh Client.class -n localhost 50000 lrr
 ```
+
+The directories of files can be adjusted in test.sh.
