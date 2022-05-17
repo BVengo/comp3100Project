@@ -132,5 +132,8 @@ for conf in $configDir/*.xml; do
 	cat $outputDir/$algorithm/log-diff.txt >> $outputDir/$algorithm/$diffLog
 done
 
+rm ds-jobs.xml
+rm ds-system.xml
+
 echo "testing done! check $outputDir/$algorithm/$diffLog"
 
