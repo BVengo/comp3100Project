@@ -22,8 +22,9 @@ public class Client {
             throw new IllegalArgumentException("Port must be between 1024 and 65535 (inclusive).");
         }
 
-        algorithm = AlgorithmFactory.getAlgorithm(args[2]);
-               
+        algorithm = AlgorithmFactory.getAlgorithm(args[2]);        
+        System.out.println("Beginning scheduling with " + algorithm.toString());
+
         try{
             Connection.connect(hostname, port);
             authenticateConnection();

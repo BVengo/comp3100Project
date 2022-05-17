@@ -1,0 +1,5 @@
+Alteration of BF
+- pick best fitting server with no jobs (prioritise active over inactive)
+- if all servers have jobs, pick server with smallest estimated runtime (prioritise active over booting)
+
+Algorithm "ma" (My algorithm)

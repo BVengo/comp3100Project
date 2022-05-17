@@ -17,6 +17,13 @@ To compile from the root folder into the `build` folder, use the command
 ```
 ./compile.sh
 ```
+
+To run the client manually (after compilation), use the command
+```
+java -cp ./build Client.class localhost 50000 <algorithm>
+```
+
+
 To run all tests from the root folder (after compilation), use the command 
 ```
 ./tests.sh Client.class -n localhost 50000 <algorithm>

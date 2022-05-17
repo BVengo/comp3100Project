@@ -24,4 +24,8 @@ public class FCAlgorithm implements Algorithm {
         Connection.handleMessage("SCHD " + job.jobId + " " + selected.serverName + " " + selected.serverId, "OK");
     }
 
+    @Override
+    public String toString() {
+        return "FC Algorithm";
+    }
 }

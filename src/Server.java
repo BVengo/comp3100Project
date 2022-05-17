@@ -1,5 +1,6 @@
 import java.rmi.UnexpectedException;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Server {
     String serverName;
@@ -57,6 +58,36 @@ public class Server {
         jobs.get(jobId).complete(runTime);
         cJobs++;
     }
+
+    /**
+     * Gets the remaining waiting and running jobs
+     */
+    public int getIncompleteJobs() {
+        return wJobs + rJobs;
+    }
+    
+    /**
+     * Get all jobs, complete or incomplete
+     */
+    public int getTotalJobs() {
+        return wJobs + rJobs + cJobs;
+    }
+
+    /**
+     * Return sum of the waiting jobs estimated runtime
+     */
+    public int getEstimatedRuntime() {
+        int runtime = 0;
+
+        for(Job job : jobs.values()) {
+            if(!job.completed) {
+                runtime += job.estRuntime;
+            }
+        }
+
+        return runtime;
+    }
+
 
     /**
      * Provides the unique server key, made up of the server name and id.

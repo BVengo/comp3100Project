@@ -18,8 +18,8 @@ public class LRRAlgorithm implements Algorithm {
             
             // Picks the server with the highest number of total cores. If there is more than one, pick the first 
             // server with the most cores and the least total jobs.
-            int sJobs = cServer.wJobs + cServer.rJobs + cServer.cJobs;
-            int lsJobs = lServer.wJobs + lServer.rJobs + lServer.cJobs;
+            int sJobs = cServer.getTotalJobs();
+            int lsJobs = lServer.getTotalJobs();
 
             if(cServer.totalCores > lServer.totalCores || (cServer.serverName.equals(lServer.serverName) && sJobs < lsJobs)) {
                 lServer = cServer;
@@ -34,5 +34,10 @@ public class LRRAlgorithm implements Algorithm {
 
         lServer.addJob(job);
         Connection.handleMessage("SCHD " + job.jobId + " " + lServer.serverName + " " + lServer.serverId, "OK");
+    }
+
+    @Override
+    public String toString() {
+        return "LRR Algorithm";
     }
 }

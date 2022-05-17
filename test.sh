@@ -115,7 +115,6 @@ for conf in $configDir/*.xml; do
 		$dsSimDir/ds-server -c $conf -v brief > $outName-my-log.txtg&
 	fi
 	sleep 4
-	echo "java -cp $buildDir $(sed 's/\.class//' <<< $yourClient)$clientArgs"
 	java -cp $buildDir $(sed 's/\.class//' <<< $yourClient)$clientArgs
 	
 	sleep 1
