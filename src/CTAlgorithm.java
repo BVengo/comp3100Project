@@ -31,6 +31,8 @@ public class CTAlgorithm implements Algorithm {
                 // Same wait time but smaller server
                 (cWaitTime == sWaitTime && current.totalCores < selected.totalCores) ||
                 // Placeholder for adding more filters
+                ((current.getNumIncompleteJobs() <= selected.getNumIncompleteJobs() / 2) && 
+                 (current.totalCores < selected.totalCores)) ||
                 (false)) {
                     selected = current;
                     sWaitTime = cWaitTime;
