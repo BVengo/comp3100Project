@@ -1,6 +1,5 @@
 import java.rmi.UnexpectedException;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Server {
     String serverName;
@@ -62,7 +61,7 @@ public class Server {
     /**
      * Gets the remaining waiting and running jobs
      */
-    public int getIncompleteJobs() {
+    public int getNumIncompleteJobs() {
         return wJobs + rJobs;
     }
     
@@ -76,7 +75,7 @@ public class Server {
     /**
      * Return sum of the waiting jobs estimated runtime
      */
-    public int getEstimatedRuntime() {
+    public int getTotalEstimateRuntime() {
         int runtime = 0;
 
         for(Job job : jobs.values()) {
@@ -84,10 +83,81 @@ public class Server {
                 runtime += job.estRuntime;
             }
         }
-
         return runtime;
     }
 
+    /**
+     * Get an estimate for the time a new job will have to wait, based on potentially having jobs running
+     * in parallel on different cores. The buffer on this estimate will grow with the number of waiting jobs,
+     * which means it will become increasingly unlikely that more jobs will be allocated to the server.
+     * @return An integer indicating the estimate parallel runtime of current jobs
+     */
+    public int getParallelEstimateWait(Job job) {
+        if(job.core <= availableCores) {
+            return 0;
+        }
+
+        Job[] incompleteJobs = getIncompleteJobs();
+        Job[] jobs = new Job[incompleteJobs.length + 1];
+
+        for(int i = 0; i < incompleteJobs.length; i++) {
+            jobs[i] = incompleteJobs[i];
+        }
+
+        jobs[incompleteJobs.length] = job;
+
+        return(getParallelEstimateWait(jobs));
+    }
+
+    /**
+     * Get an estimate for the wait and run time of current jobs, based on potentially having jobs running
+     * in parallel on different cores. The buffer on this estimate will grow with the number of waiting jobs,
+     * which means it will become increasingly unlikely that more jobs will be allocated to the server.
+     * @return An integer indicating the estimate parallel runtime of current jobs
+     */
+    private int getParallelEstimateWait(Job[] incompleteJobs) {
+        // Total number of cores for all current jobs
+        int totalJobCores = 0;
+        for(Job j : incompleteJobs) {
+            totalJobCores += j.core;
+        }
+
+        // Number of total required cores since some will run parallel
+        int numParallel = (int)Math.ceil((float)totalJobCores / (float)totalCores);
+
+        // Maximum times of the jobs expected to be running
+        int[] maxEstTimes = new int[numParallel];
+        
+        for(Job j : incompleteJobs) {
+            for(int i = 0; i < maxEstTimes.length; i++) {
+                if(j.estRuntime > maxEstTimes[i]) {
+                    maxEstTimes[i] = j.estRuntime;
+                    break;
+                }
+            }
+        }
+
+        int sumEstTimes = 0;
+        for(int time : maxEstTimes) {
+            sumEstTimes += time;
+        }
+
+        return sumEstTimes;
+    }
+
+    public Job[] getIncompleteJobs() {
+        Job[] incomplete = new Job[getNumIncompleteJobs()];
+        int i = 0;
+
+        for(Job job : jobs.values()) {
+            if(!job.completed) {
+                incomplete[i] = job;
+                i++;
+            }
+        }
+        
+        return incomplete;
+    }
 
     /**
      * Provides the unique server key, made up of the server name and id.

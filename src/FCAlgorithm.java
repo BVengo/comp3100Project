@@ -1,5 +1,9 @@
 import java.io.IOException;
 
+/**
+ * The First Capable algorithm.
+ * Simply returns the first capable server provided by ds-server.
+ */
 public class FCAlgorithm implements Algorithm {
 
     @Override
@@ -26,6 +30,6 @@ public class FCAlgorithm implements Algorithm {
 
     @Override
     public String toString() {
-        return "FC Algorithm";
+        return "First Capable (FC) Algorithm";
     }
 }

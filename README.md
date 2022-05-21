@@ -20,7 +20,7 @@ To compile from the root folder into the `build` folder, use the command
 
 To run the client manually (after compilation), use the command
 ```
-java -cp ./build Client.class localhost 50000 <algorithm>
+java -cp ./build Client localhost 50000 <algorithm>
 ```
 
 
@@ -34,3 +34,9 @@ for example
 ```
 
 The directories of files can be adjusted in test.sh.
+
+To specifically run the Stage2 tests for turnaround time (after compilation), use the command
+```
+cd ./configs && ./stage2-test-x86 "java -cp ../build Client localhost 50000 ct" -o tt -n & cd ..
+```
+Unfortunately the stage2-test-x86 hardcoded the location of the config files, so it cannot be run from the parent directory. It also means there are now copies of ds-server littered throughout this project.

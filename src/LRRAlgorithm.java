@@ -1,5 +1,10 @@
 import java.io.IOException;
 
+/**
+ * The Largest-Round-Robin algorithm.
+ * Picks the server with the highest number of total cores. If there is more than one, pick the first 
+ * server with the most cores and the least total jobs.
+ */
 public class LRRAlgorithm implements Algorithm {
 
     public void scheduleJob(Job job) throws IOException {

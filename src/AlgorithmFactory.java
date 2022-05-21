@@ -9,8 +9,8 @@ public abstract class AlgorithmFactory {
                 return new LRRAlgorithm();
             case "FC":
                 return new FCAlgorithm();
-            case "MA":
-                return new MAAlgorithm();
+            case "CT":
+                return new CTAlgorithm();
             default:
                 System.out.println("That's currently an unimplemented algorithm. Defaulting to LRR");
                 return new LRRAlgorithm();
