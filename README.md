@@ -18,6 +18,11 @@ To compile from the root folder into the `build` folder, use the command
 ./compile.sh
 ```
 
+To run the ds-sim server, use the command (from the main folder)
+```
+./ds-sim/ds-server -v brief -c ./configs/<config> -n
+```
+
 To run the client manually (after compilation), use the command
 ```
 java -cp ./build Client localhost 50000 <algorithm>

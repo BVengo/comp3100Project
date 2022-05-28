@@ -93,10 +93,12 @@ public class Server {
      * @return An integer indicating the estimate parallel runtime of current jobs
      */
     public int getParallelEstimateWait(Job job) {
+        // Can be immediately allocated
         if(job.core <= availableCores) {
             return 0;
         }
 
+        // Include the new job in the calculation of estimatedRunTime
         Job[] incompleteJobs = getIncompleteJobs();
         Job[] jobs = new Job[incompleteJobs.length + 1];
 
@@ -138,11 +140,17 @@ public class Server {
         }
 
         int sumEstTimes = 0;
+        int multEstTimes = 1;
         for(int time : maxEstTimes) {
             sumEstTimes += time;
+            // multEstTimes is a minimum of 1 to prevent div 0 or a smaller denominator later
+            multEstTimes *= (time >= 1 ? time : 1);
         }
 
-        return sumEstTimes;
+        // Dividing the sum by the multiplier will limit how rapidly the extra buffer grows
+        // as the number of jobs increase. Otherwise, jobs won't be allocated to servers with an actual
+        // (not our estimate) low runtime because the additional buffer is too high
+        return sumEstTimes - (sumEstTimes/multEstTimes);
     }
 
     public Job[] getIncompleteJobs() {

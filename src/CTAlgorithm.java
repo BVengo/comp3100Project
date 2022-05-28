@@ -25,15 +25,10 @@ public class CTAlgorithm implements Algorithm {
             
             int cWaitTime = current.getParallelEstimateWait(job);
 
-            if(
-                // Smaller wait time
+            if(// Lower wait times
                 (cWaitTime < sWaitTime) ||
-                // Same wait time but smaller server
-                (cWaitTime == sWaitTime && current.totalCores < selected.totalCores) ||
-                // Placeholder for adding more filters
-                ((current.getNumIncompleteJobs() <= selected.getNumIncompleteJobs() / 2) && 
-                 (current.totalCores < selected.totalCores)) ||
-                (false)) {
+                // Same wait time but less cores
+               (cWaitTime == sWaitTime && current.totalCores < selected.totalCores)) {
                     selected = current;
                     sWaitTime = cWaitTime;
             }
