@@ -73,20 +73,6 @@ public class Server {
     }
 
     /**
-     * Return sum of the waiting jobs estimated runtime
-     */
-    public int getTotalEstimateRuntime() {
-        int runtime = 0;
-
-        for(Job job : jobs.values()) {
-            if(!job.completed) {
-                runtime += job.estRuntime;
-            }
-        }
-        return runtime;
-    }
-
-    /**
      * Get an estimate for the time a new job will have to wait, based on potentially having jobs running
      * in parallel on different cores. The buffer on this estimate will grow with the number of waiting jobs,
      * which means it will become increasingly unlikely that more jobs will be allocated to the server.
@@ -100,15 +86,7 @@ public class Server {
 
         // Include the new job in the calculation of estimatedRunTime
         Job[] incompleteJobs = getIncompleteJobs();
-        Job[] jobs = new Job[incompleteJobs.length + 1];
-
-        for(int i = 0; i < incompleteJobs.length; i++) {
-            jobs[i] = incompleteJobs[i];
-        }
-
-        jobs[incompleteJobs.length] = job;
-
-        return(getParallelEstimateWait(jobs));
+        return(getParallelEstimateWait(incompleteJobs));
     }
 
     /**
@@ -140,7 +118,7 @@ public class Server {
         }
 
         int sumEstTimes = 0;
-        int multEstTimes = 1;
+        long multEstTimes = 1;
         for(int time : maxEstTimes) {
             sumEstTimes += time;
             // multEstTimes is a minimum of 1 to prevent div 0 or a smaller denominator later
@@ -150,7 +128,7 @@ public class Server {
         // Dividing the sum by the multiplier will limit how rapidly the extra buffer grows
         // as the number of jobs increase. Otherwise, jobs won't be allocated to servers with an actual
         // (not our estimate) low runtime because the additional buffer is too high
-        return sumEstTimes - (sumEstTimes/multEstTimes);
+        return sumEstTimes - (int)(sumEstTimes/multEstTimes);
     }
 
     public Job[] getIncompleteJobs() {

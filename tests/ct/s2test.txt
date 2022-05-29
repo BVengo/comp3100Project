@@ -5820,8 +5820,8 @@ t:      26102 job   660 on # 1 of server medium COMPLETED
 SENT JCPL 26102 660 medium 1
 RCVD REDY
 SENT JOBN 26112 662 6710 27 52700 80400
-RCVD SCHD 662 xlarge 1
-t:      26112 job   662 (waiting) on # 1 of server xlarge (active) SCHEDULED
+RCVD SCHD 662 xlarge 7
+t:      26112 job   662 (waiting) on # 7 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 t:      26133 job   639 on # 7 of server xlarge COMPLETED
@@ -5894,7 +5894,6 @@ t:      26695 job   666 on # 3 of server xlarge COMPLETED
 SENT JCPL 26695 666 xlarge 3
 RCVD REDY
 t:      26736 job   604 on # 1 of server xlarge COMPLETED
-t:      26736 job   662 on # 1 of server xlarge RUNNING
 SENT JCPL 26736 604 xlarge 1
 RCVD REDY
 t:      26747 job   587 on # 6 of server large COMPLETED
@@ -6042,12 +6041,13 @@ t:      27484 job   649 on # 2 of server large COMPLETED
 SENT JCPL 27484 649 large 2
 RCVD REDY
 t:      27502 job   631 on # 7 of server xlarge COMPLETED
+t:      27502 job   662 on # 7 of server xlarge RUNNING
 SENT JCPL 27502 631 xlarge 7
 RCVD REDY
 SENT JOBN 27531 685 1840 24 33200 73400
-RCVD SCHD 685 xlarge 3
-t:      27531 job   685 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      27531 job   685 on # 3 of server xlarge RUNNING
+RCVD SCHD 685 xlarge 1
+t:      27531 job   685 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      27531 job   685 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      27537 job   664 on # 5 of server medium COMPLETED
@@ -6090,15 +6090,14 @@ t:      27599 job   689 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 27599 690 79 20 42900 92100
-RCVD SCHD 690 xlarge 4
-t:      27599 job   690 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      27599 job   690 on # 4 of server xlarge RUNNING
+RCVD SCHD 690 xlarge 3
+t:      27599 job   690 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      27599 job   690 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 27599 691 302 30 85900 229600
-RCVD SCHD 691 xlarge 7
-t:      27599 job   691 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      27599 job   691 on # 7 of server xlarge RUNNING
+RCVD SCHD 691 xlarge 3
+t:      27599 job   691 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 27603 692 126 7 4800 14200
@@ -6228,9 +6227,9 @@ t:      27657 job   709 on # 6 of server medium RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 27665 710 6467 8 4500 3600
-RCVD SCHD 710 xlarge 3
-t:      27665 job   710 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      27665 job   710 on # 3 of server xlarge RUNNING
+RCVD SCHD 710 xlarge 1
+t:      27665 job   710 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      27665 job   710 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      27669 job   708 on # 9 of server large COMPLETED
@@ -6255,9 +6254,8 @@ t:      27698 job   713 on # 9 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 27702 714 6355 8 6900 15700
-RCVD SCHD 714 xlarge 5
-t:      27702 job   714 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      27702 job   714 on # 5 of server xlarge RUNNING
+RCVD SCHD 714 xlarge 3
+t:      27702 job   714 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 t:      27756 job   668 on # 8 of server small COMPLETED
@@ -6423,9 +6421,6 @@ t:      28630 job   732 (running) on # 2 of server large (active) SCHEDULED
 t:      28630 job   732 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      28706 job   691 on # 7 of server xlarge COMPLETED
-SENT JCPL 28706 691 xlarge 7
-RCVD REDY
 t:      28712 job   695 on # 5 of server large COMPLETED
 SENT JCPL 28712 695 large 5
 RCVD REDY
@@ -6466,22 +6461,22 @@ t:      29096 job   593 on # 8 of server medium COMPLETED
 SENT JCPL 29096 593 medium 8
 RCVD REDY
 SENT JOBN 29163 737 3017 15 26100 58300
-RCVD SCHD 737 xlarge 5
-t:      29163 job   737 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      29163 job   737 on # 5 of server xlarge RUNNING
+RCVD SCHD 737 xlarge 4
+t:      29163 job   737 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      29163 job   737 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 29206 738 4 15 8800 28100
-RCVD SCHD 738 xlarge 6
-t:      29206 job   738 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      29206 job   738 on # 6 of server xlarge RUNNING
+RCVD SCHD 738 xlarge 5
+t:      29206 job   738 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      29206 job   738 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      29214 job   685 on # 3 of server xlarge COMPLETED
-SENT JCPL 29214 685 xlarge 3
+t:      29214 job   685 on # 1 of server xlarge COMPLETED
+SENT JCPL 29214 685 xlarge 1
 RCVD REDY
-t:      29222 job   738 on # 6 of server xlarge COMPLETED
-SENT JCPL 29222 738 xlarge 6
+t:      29222 job   738 on # 5 of server xlarge COMPLETED
+SENT JCPL 29222 738 xlarge 5
 RCVD REDY
 SENT JOBN 29357 739 719 2 1900 3500
 RCVD SCHD 739 small 5
@@ -6668,8 +6663,8 @@ RCVD REDY
 t:      30753 job   600 on # 0 of server medium COMPLETED
 SENT JCPL 30753 600 medium 0
 RCVD REDY
-t:      30758 job   737 on # 5 of server xlarge COMPLETED
-SENT JCPL 30758 737 xlarge 5
+t:      30758 job   737 on # 4 of server xlarge COMPLETED
+SENT JCPL 30758 737 xlarge 4
 RCVD REDY
 t:      30802 job   735 on # 5 of server small COMPLETED
 SENT JCPL 30802 735 small 5
@@ -6773,9 +6768,9 @@ t:      31152 job   770 on # 0 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31155 771 288 14 12600 31700
-RCVD SCHD 771 xlarge 3
-t:      31155 job   771 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      31155 job   771 on # 3 of server xlarge RUNNING
+RCVD SCHD 771 xlarge 1
+t:      31155 job   771 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      31155 job   771 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31161 772 3865 4 3600 5600
@@ -6841,15 +6836,15 @@ t:      31186 job   781 on # 4 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31194 782 8188 13 8500 24400
-RCVD SCHD 782 xlarge 5
-t:      31194 job   782 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      31194 job   782 on # 5 of server xlarge RUNNING
+RCVD SCHD 782 xlarge 4
+t:      31194 job   782 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      31194 job   782 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31196 783 5110 13 15700 36900
-RCVD SCHD 783 xlarge 6
-t:      31196 job   783 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      31196 job   783 on # 6 of server xlarge RUNNING
+RCVD SCHD 783 xlarge 4
+t:      31196 job   783 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      31196 job   783 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31197 784 419 1 400 300
@@ -6877,15 +6872,15 @@ t:      31204 job   787 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31205 788 1431 7 2900 1600
-RCVD SCHD 788 xlarge 3
-t:      31205 job   788 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      31205 job   788 on # 3 of server xlarge RUNNING
+RCVD SCHD 788 xlarge 1
+t:      31205 job   788 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      31205 job   788 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31208 789 421 14 3600 35500
-RCVD SCHD 789 xlarge 6
-t:      31208 job   789 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      31208 job   789 on # 6 of server xlarge RUNNING
+RCVD SCHD 789 xlarge 5
+t:      31208 job   789 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      31208 job   789 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31209 790 638 1 400 300
@@ -6901,9 +6896,8 @@ t:      31213 job   791 on # 8 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31213 792 103 10 16700 2700
-RCVD SCHD 792 xlarge 4
-t:      31213 job   792 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      31213 job   792 on # 4 of server xlarge RUNNING
+RCVD SCHD 792 xlarge 3
+t:      31213 job   792 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 31214 793 730 1 300 500
@@ -6916,15 +6910,14 @@ t:      31215 job   786 on # 0 of server medium COMPLETED
 SENT JCPL 31215 786 medium 0
 RCVD REDY
 SENT JOBN 31220 794 745 8 1200 14100
-RCVD SCHD 794 xlarge 5
-t:      31220 job   794 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      31220 job   794 on # 5 of server xlarge RUNNING
+RCVD SCHD 794 xlarge 3
+t:      31220 job   794 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 31223 795 3247 15 16200 22400
-RCVD SCHD 795 xlarge 7
-t:      31223 job   795 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      31223 job   795 on # 7 of server xlarge RUNNING
+RCVD SCHD 795 xlarge 5
+t:      31223 job   795 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      31223 job   795 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31226 796 4400 3 1800 5200
@@ -6940,13 +6933,13 @@ t:      31228 job   797 on # 0 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31228 798 61 31 90700 9500
-RCVD SCHD 798 xlarge 8
-t:      31228 job   798 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      31228 job   798 on # 8 of server xlarge RUNNING
+RCVD SCHD 798 xlarge 6
+t:      31228 job   798 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      31228 job   798 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      31266 job   798 on # 8 of server xlarge COMPLETED
-SENT JCPL 31266 798 xlarge 8
+t:      31266 job   798 on # 6 of server xlarge COMPLETED
+SENT JCPL 31266 798 xlarge 6
 RCVD REDY
 SENT JOBN 31275 799 965 1 1000 1300
 RCVD SCHD 799 small 1
@@ -6970,16 +6963,9 @@ t:      31319 job   801 on # 2 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31345 802 8 7 4400 13600
-RCVD SCHD 802 xlarge 7
-t:      31345 job   802 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      31345 job   802 on # 7 of server xlarge RUNNING
+RCVD SCHD 802 xlarge 3
+t:      31345 job   802 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
-RCVD REDY
-t:      31358 job   802 on # 7 of server xlarge COMPLETED
-SENT JCPL 31358 802 xlarge 7
-RCVD REDY
-t:      31379 job   714 on # 5 of server xlarge COMPLETED
-SENT JCPL 31379 714 xlarge 5
 RCVD REDY
 SENT JOBN 31390 803 3762 2 1400 3500
 RCVD SCHD 803 small 5
@@ -6988,15 +6974,13 @@ t:      31390 job   803 on # 5 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 31449 804 3875 6 1000 8600
-RCVD SCHD 804 xlarge 5
-t:      31449 job   804 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      31449 job   804 on # 5 of server xlarge RUNNING
+RCVD SCHD 804 xlarge 3
+t:      31449 job   804 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 31482 805 579 6 3400 5300
-RCVD SCHD 805 xlarge 7
-t:      31482 job   805 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      31482 job   805 on # 7 of server xlarge RUNNING
+RCVD SCHD 805 xlarge 3
+t:      31482 job   805 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 t:      31484 job   732 on # 2 of server large COMPLETED
@@ -7045,15 +7029,14 @@ t:      31711 job   757 on # 3 of server tiny COMPLETED
 SENT JCPL 31711 757 tiny 3
 RCVD REDY
 SENT JOBN 31724 810 1519 12 3400 15900
-RCVD SCHD 810 xlarge 8
-t:      31724 job   810 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      31724 job   810 on # 8 of server xlarge RUNNING
+RCVD SCHD 810 xlarge 3
+t:      31724 job   810 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 31737 811 1837 16 25300 54400
-RCVD SCHD 811 xlarge 8
-t:      31737 job   811 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      31737 job   811 on # 8 of server xlarge RUNNING
+RCVD SCHD 811 xlarge 6
+t:      31737 job   811 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      31737 job   811 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      31757 job   729 on # 2 of server xlarge COMPLETED
@@ -7074,9 +7057,6 @@ t:      31879 job   813 (running) on # 6 of server medium (active) SCHEDULED
 t:      31879 job   813 on # 6 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      31920 job   662 on # 1 of server xlarge COMPLETED
-SENT JCPL 31920 662 xlarge 1
-RCVD REDY
 SENT JOBN 31965 814 148 4 1000 7300
 RCVD SCHD 814 large 2
 t:      31965 job   814 (running) on # 2 of server large (active) SCHEDULED
@@ -7092,8 +7072,8 @@ t:      32065 job   815 (running) on # 0 of server tiny (active) SCHEDULED
 t:      32065 job   815 on # 0 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      32074 job   710 on # 3 of server xlarge COMPLETED
-SENT JCPL 32074 710 xlarge 3
+t:      32074 job   710 on # 1 of server xlarge COMPLETED
+SENT JCPL 32074 710 xlarge 1
 RCVD REDY
 SENT JOBN 32149 816 330 4 2000 7000
 RCVD SCHD 816 large 2
@@ -7179,9 +7159,6 @@ t:      32542 job   823 (running) on # 1 of server medium (active) SCHEDULED
 t:      32542 job   823 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      32560 job   805 on # 7 of server xlarge COMPLETED
-SENT JCPL 32560 805 xlarge 7
-RCVD REDY
 t:      32564 job   760 on # 4 of server small COMPLETED
 SENT JCPL 32564 760 small 4
 RCVD REDY
@@ -7194,8 +7171,8 @@ t:      32665 job   824 (running) on # 5 of server tiny (active) SCHEDULED
 t:      32665 job   824 on # 5 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      32694 job   794 on # 5 of server xlarge COMPLETED
-SENT JCPL 32694 794 xlarge 5
+t:      32686 job   662 on # 7 of server xlarge COMPLETED
+SENT JCPL 32686 662 xlarge 7
 RCVD REDY
 t:      32716 job   683 on # 2 of server medium COMPLETED
 SENT JCPL 32716 683 medium 2
@@ -7215,17 +7192,14 @@ RCVD REDY
 t:      32770 job   799 on # 1 of server small COMPLETED
 SENT JCPL 32770 799 small 1
 RCVD REDY
-t:      32776 job   788 on # 3 of server xlarge COMPLETED
-SENT JCPL 32776 788 xlarge 3
+t:      32776 job   788 on # 1 of server xlarge COMPLETED
+SENT JCPL 32776 788 xlarge 1
 RCVD REDY
 SENT JOBN 32785 827 4969 3 3100 5700
 RCVD SCHD 827 small 4
 t:      32785 job   827 (running) on # 4 of server small (active) SCHEDULED
 t:      32785 job   827 on # 4 of server small RUNNING
 SENT OK
-RCVD REDY
-t:      32811 job   792 on # 4 of server xlarge COMPLETED
-SENT JCPL 32811 792 xlarge 4
 RCVD REDY
 t:      32838 job   731 on # 3 of server small COMPLETED
 SENT JCPL 32838 731 small 3
@@ -7260,8 +7234,8 @@ RCVD REDY
 t:      32994 job   745 on # 6 of server small COMPLETED
 SENT JCPL 32994 745 small 6
 RCVD REDY
-t:      33027 job   789 on # 6 of server xlarge COMPLETED
-SENT JCPL 33027 789 xlarge 6
+t:      33027 job   789 on # 5 of server xlarge COMPLETED
+SENT JCPL 33027 789 xlarge 5
 RCVD REDY
 SENT JOBN 33043 830 14 4 2500 3700
 RCVD SCHD 830 small 6
@@ -7300,8 +7274,8 @@ t:      33260 job   723 on # 2 of server tiny COMPLETED
 t:      33260 job   724 on # 2 of server tiny RUNNING
 SENT JCPL 33260 723 tiny 2
 RCVD REDY
-t:      33270 job   795 on # 7 of server xlarge COMPLETED
-SENT JCPL 33270 795 xlarge 7
+t:      33270 job   795 on # 5 of server xlarge COMPLETED
+SENT JCPL 33270 795 xlarge 5
 RCVD REDY
 t:      33282 job   816 on # 2 of server large COMPLETED
 SENT JCPL 33282 816 large 2
@@ -7409,8 +7383,8 @@ t:      33752 job   842 (running) on # 2 of server medium (active) SCHEDULED
 t:      33752 job   842 on # 2 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      33793 job   811 on # 8 of server xlarge COMPLETED
-SENT JCPL 33793 811 xlarge 8
+t:      33793 job   811 on # 6 of server xlarge COMPLETED
+SENT JCPL 33793 811 xlarge 6
 RCVD REDY
 SENT JOBN 33848 843 2291 4 1500 6200
 RCVD SCHD 843 small 6
@@ -7479,27 +7453,27 @@ t:      34186 job   850 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34186 851 21 23 14300 61400
-RCVD SCHD 851 xlarge 1
-t:      34186 job   851 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      34186 job   851 on # 1 of server xlarge RUNNING
+RCVD SCHD 851 xlarge 2
+t:      34186 job   851 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      34186 job   851 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34186 852 5593 17 10400 8200
-RCVD SCHD 852 xlarge 2
-t:      34186 job   852 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      34186 job   852 on # 2 of server xlarge RUNNING
+RCVD SCHD 852 xlarge 1
+t:      34186 job   852 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      34186 job   852 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34186 853 2815 27 82100 33000
-RCVD SCHD 853 xlarge 7
-t:      34186 job   853 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      34186 job   853 on # 7 of server xlarge RUNNING
+RCVD SCHD 853 xlarge 5
+t:      34186 job   853 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      34186 job   853 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34186 854 67 25 61700 27000
-RCVD SCHD 854 xlarge 9
-t:      34186 job   854 (running) on # 9 of server xlarge (active) SCHEDULED
-t:      34186 job   854 on # 9 of server xlarge RUNNING
+RCVD SCHD 854 xlarge 6
+t:      34186 job   854 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      34186 job   854 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34191 855 9537 14 10600 17500
@@ -7538,8 +7512,8 @@ t:      34203 job   860 (running) on # 5 of server small (active) SCHEDULED
 t:      34203 job   860 on # 5 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      34204 job   851 on # 1 of server xlarge COMPLETED
-SENT JCPL 34204 851 xlarge 1
+t:      34204 job   851 on # 2 of server xlarge COMPLETED
+SENT JCPL 34204 851 xlarge 2
 RCVD REDY
 SENT JOBN 34207 861 9510 1 900 1900
 RCVD SCHD 861 tiny 1
@@ -7560,21 +7534,21 @@ t:      34211 job   863 on # 9 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34211 864 1402 12 4400 13000
-RCVD SCHD 864 xlarge 1
-t:      34211 job   864 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      34211 job   864 on # 1 of server xlarge RUNNING
+RCVD SCHD 864 xlarge 2
+t:      34211 job   864 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      34211 job   864 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34211 865 2800 11 14300 11700
-RCVD SCHD 865 xlarge 1
-t:      34211 job   865 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      34211 job   865 on # 1 of server xlarge RUNNING
+RCVD SCHD 865 xlarge 2
+t:      34211 job   865 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      34211 job   865 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34211 866 134 7 6700 7300
-RCVD SCHD 866 xlarge 1
-t:      34211 job   866 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      34211 job   866 on # 1 of server xlarge RUNNING
+RCVD SCHD 866 xlarge 2
+t:      34211 job   866 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      34211 job   866 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34211 867 1568 2 1300 4000
@@ -7584,19 +7558,19 @@ t:      34211 job   867 on # 8 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34213 868 7670 14 12400 3400
-RCVD SCHD 868 xlarge 2
-t:      34213 job   868 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      34213 job   868 on # 2 of server xlarge RUNNING
+RCVD SCHD 868 xlarge 7
+t:      34213 job   868 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      34213 job   868 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 34215 869 1791 7 2700 3400
 RCVD SCHD 869 xlarge 3
-t:      34215 job   869 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      34215 job   869 on # 3 of server xlarge RUNNING
+t:      34215 job   869 (waiting) on # 3 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
-t:      34222 job   690 on # 4 of server xlarge COMPLETED
-SENT JCPL 34222 690 xlarge 4
+t:      34222 job   690 on # 3 of server xlarge COMPLETED
+t:      34222 job   691 on # 3 of server xlarge RUNNING
+SENT JCPL 34222 690 xlarge 3
 RCVD REDY
 t:      34236 job   857 on # 9 of server large COMPLETED
 SENT JCPL 34236 857 large 9
@@ -7651,13 +7625,13 @@ t:      34330 job   876 (running) on # 9 of server medium (active) SCHEDULED
 t:      34330 job   876 on # 9 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      34334 job   854 on # 9 of server xlarge COMPLETED
-SENT JCPL 34334 854 xlarge 9
+t:      34334 job   854 on # 6 of server xlarge COMPLETED
+SENT JCPL 34334 854 xlarge 6
 RCVD REDY
 SENT JOBN 34359 877 4878 26 64800 124100
-RCVD SCHD 877 xlarge 4
-t:      34359 job   877 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      34359 job   877 on # 4 of server xlarge RUNNING
+RCVD SCHD 877 xlarge 6
+t:      34359 job   877 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      34359 job   877 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      34380 job   813 on # 6 of server medium COMPLETED
@@ -7686,9 +7660,9 @@ t:      34474 job   728 on # 2 of server tiny RUNNING
 SENT JCPL 34474 724 tiny 2
 RCVD REDY
 SENT JOBN 34510 881 1457 9 8200 14000
-RCVD SCHD 881 xlarge 3
-t:      34510 job   881 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      34510 job   881 on # 3 of server xlarge RUNNING
+RCVD SCHD 881 xlarge 7
+t:      34510 job   881 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      34510 job   881 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      34520 job   875 on # 7 of server medium COMPLETED
@@ -7708,9 +7682,9 @@ t:      34579 job   824 on # 5 of server tiny COMPLETED
 SENT JCPL 34579 824 tiny 5
 RCVD REDY
 SENT JOBN 34618 883 1699 16 21700 56700
-RCVD SCHD 883 xlarge 6
-t:      34618 job   883 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      34618 job   883 on # 6 of server xlarge RUNNING
+RCVD SCHD 883 xlarge 8
+t:      34618 job   883 (running) on # 8 of server xlarge (active) SCHEDULED
+t:      34618 job   883 on # 8 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      34623 job   728 on # 2 of server tiny COMPLETED
@@ -7720,8 +7694,8 @@ RCVD REDY
 t:      34627 job   803 on # 5 of server small COMPLETED
 SENT JCPL 34627 803 small 5
 RCVD REDY
-t:      34637 job   771 on # 3 of server xlarge COMPLETED
-SENT JCPL 34637 771 xlarge 3
+t:      34637 job   771 on # 1 of server xlarge COMPLETED
+SENT JCPL 34637 771 xlarge 1
 RCVD REDY
 t:      34639 job   859 on # 3 of server small COMPLETED
 SENT JCPL 34639 859 small 3
@@ -7757,9 +7731,9 @@ t:      34736 job   687 on # 5 of server medium COMPLETED
 SENT JCPL 34736 687 medium 5
 RCVD REDY
 SENT JOBN 34744 887 2197 14 16200 55600
-RCVD SCHD 887 xlarge 3
-t:      34744 job   887 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      34744 job   887 on # 3 of server xlarge RUNNING
+RCVD SCHD 887 xlarge 1
+t:      34744 job   887 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      34744 job   887 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      34773 job   826 on # 1 of server medium COMPLETED
@@ -7795,16 +7769,16 @@ t:      34926 job   890 (running) on # 1 of server medium (active) SCHEDULED
 t:      34926 job   890 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      34944 job   783 on # 6 of server xlarge COMPLETED
-SENT JCPL 34944 783 xlarge 6
+t:      34944 job   783 on # 4 of server xlarge COMPLETED
+SENT JCPL 34944 783 xlarge 4
 RCVD REDY
 t:      34960 job   819 on # 3 of server large COMPLETED
 SENT JCPL 34960 819 large 3
 RCVD REDY
 SENT JOBN 34982 891 656 14 6600 37400
-RCVD SCHD 891 xlarge 6
-t:      34982 job   891 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      34982 job   891 on # 6 of server xlarge RUNNING
+RCVD SCHD 891 xlarge 4
+t:      34982 job   891 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      34982 job   891 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      35029 job   867 on # 8 of server small COMPLETED
@@ -7826,9 +7800,9 @@ t:      35127 job   893 on # 5 of server medium RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 35156 894 1487 10 3500 12100
-RCVD SCHD 894 xlarge 5
-t:      35156 job   894 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      35156 job   894 on # 5 of server xlarge RUNNING
+RCVD SCHD 894 xlarge 8
+t:      35156 job   894 (running) on # 8 of server xlarge (active) SCHEDULED
+t:      35156 job   894 on # 8 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      35181 job   796 on # 0 of server medium COMPLETED
@@ -7852,6 +7826,12 @@ t:      35317 job   896 (running) on # 0 of server medium (active) SCHEDULED
 t:      35317 job   896 on # 0 of server medium RUNNING
 SENT OK
 RCVD REDY
+t:      35329 job   691 on # 3 of server xlarge COMPLETED
+t:      35329 job   714 on # 3 of server xlarge RUNNING
+t:      35329 job   792 on # 3 of server xlarge RUNNING
+t:      35329 job   794 on # 3 of server xlarge RUNNING
+SENT JCPL 35329 691 xlarge 3
+RCVD REDY
 t:      35362 job   823 on # 1 of server medium COMPLETED
 SENT JCPL 35362 823 medium 1
 RCVD REDY
@@ -7867,8 +7847,8 @@ RCVD REDY
 t:      35484 job   733 on # 5 of server large COMPLETED
 SENT JCPL 35484 733 large 5
 RCVD REDY
-t:      35559 job   891 on # 6 of server xlarge COMPLETED
-SENT JCPL 35559 891 xlarge 6
+t:      35559 job   891 on # 4 of server xlarge COMPLETED
+SENT JCPL 35559 891 xlarge 4
 RCVD REDY
 SENT JOBN 35561 898 535 1 500 300
 RCVD SCHD 898 tiny 0
@@ -7876,25 +7856,19 @@ t:      35561 job   898 (running) on # 0 of server tiny (active) SCHEDULED
 t:      35561 job   898 on # 0 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      35599 job   804 on # 5 of server xlarge COMPLETED
-SENT JCPL 35599 804 xlarge 5
-RCVD REDY
-t:      35649 job   810 on # 8 of server xlarge COMPLETED
-SENT JCPL 35649 810 xlarge 8
-RCVD REDY
 SENT JOBN 35708 899 1104 2 1500 800
 RCVD SCHD 899 small 7
 t:      35708 job   899 (running) on # 7 of server small (active) SCHEDULED
 t:      35708 job   899 on # 7 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      35834 job   782 on # 5 of server xlarge COMPLETED
-SENT JCPL 35834 782 xlarge 5
+t:      35834 job   782 on # 4 of server xlarge COMPLETED
+SENT JCPL 35834 782 xlarge 4
 RCVD REDY
 SENT JOBN 35834 900 755 26 48900 95000
-RCVD SCHD 900 xlarge 8
-t:      35834 job   900 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      35834 job   900 on # 8 of server xlarge RUNNING
+RCVD SCHD 900 xlarge 4
+t:      35834 job   900 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      35834 job   900 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      35836 job   882 on # 6 of server medium COMPLETED
@@ -7946,11 +7920,8 @@ RCVD REDY
 t:      36075 job   781 on # 4 of server tiny COMPLETED
 SENT JCPL 36075 781 tiny 4
 RCVD REDY
-t:      36123 job   869 on # 3 of server xlarge COMPLETED
-SENT JCPL 36123 869 xlarge 3
-RCVD REDY
-t:      36140 job   853 on # 7 of server xlarge COMPLETED
-SENT JCPL 36140 853 xlarge 7
+t:      36140 job   853 on # 5 of server xlarge COMPLETED
+SENT JCPL 36140 853 xlarge 5
 RCVD REDY
 t:      36187 job   834 on # 6 of server large COMPLETED
 SENT JCPL 36187 834 large 6
@@ -7985,11 +7956,11 @@ RCVD REDY
 t:      36390 job   828 on # 4 of server medium COMPLETED
 SENT JCPL 36390 828 medium 4
 RCVD REDY
-t:      36422 job   866 on # 1 of server xlarge COMPLETED
-SENT JCPL 36422 866 xlarge 1
+t:      36422 job   866 on # 2 of server xlarge COMPLETED
+SENT JCPL 36422 866 xlarge 2
 RCVD REDY
-t:      36430 job   864 on # 1 of server xlarge COMPLETED
-SENT JCPL 36430 864 xlarge 1
+t:      36430 job   864 on # 2 of server xlarge COMPLETED
+SENT JCPL 36430 864 xlarge 2
 RCVD REDY
 SENT JOBN 36435 907 8882 12 23400 15500
 RCVD SCHD 907 large 3
@@ -8003,17 +7974,17 @@ t:      36473 job   908 (running) on # 1 of server medium (active) SCHEDULED
 t:      36473 job   908 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      36483 job   887 on # 3 of server xlarge COMPLETED
-SENT JCPL 36483 887 xlarge 3
+t:      36483 job   887 on # 1 of server xlarge COMPLETED
+SENT JCPL 36483 887 xlarge 1
 RCVD REDY
 SENT JOBN 36530 909 1783 19 22900 52300
-RCVD SCHD 909 xlarge 1
-t:      36530 job   909 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      36530 job   909 on # 1 of server xlarge RUNNING
+RCVD SCHD 909 xlarge 2
+t:      36530 job   909 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      36530 job   909 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      36560 job   900 on # 8 of server xlarge COMPLETED
-SENT JCPL 36560 900 xlarge 8
+t:      36560 job   900 on # 4 of server xlarge COMPLETED
+SENT JCPL 36560 900 xlarge 4
 RCVD REDY
 t:      36618 job   847 on # 2 of server large COMPLETED
 SENT JCPL 36618 847 large 2
@@ -8054,6 +8025,15 @@ RCVD REDY
 t:      36795 job   850 on # 0 of server xlarge COMPLETED
 SENT JCPL 36795 850 xlarge 0
 RCVD REDY
+t:      36803 job   794 on # 3 of server xlarge COMPLETED
+t:      36803 job   802 on # 3 of server xlarge RUNNING
+t:      36803 job   804 on # 3 of server xlarge RUNNING
+SENT JCPL 36803 794 xlarge 3
+RCVD REDY
+t:      36816 job   802 on # 3 of server xlarge COMPLETED
+t:      36816 job   805 on # 3 of server xlarge RUNNING
+SENT JCPL 36816 802 xlarge 3
+RCVD REDY
 t:      36857 job   874 on # 6 of server medium COMPLETED
 SENT JCPL 36857 874 medium 6
 RCVD REDY
@@ -8072,6 +8052,10 @@ SENT JCPL 36891 742 tiny 2
 RCVD REDY
 t:      36924 job   839 on # 0 of server large COMPLETED
 SENT JCPL 36924 839 large 0
+RCVD REDY
+t:      36927 job   792 on # 3 of server xlarge COMPLETED
+t:      36927 job   810 on # 3 of server xlarge RUNNING
+SENT JCPL 36927 792 xlarge 3
 RCVD REDY
 SENT JOBN 36941 914 962 4 1100 2100
 RCVD SCHD 914 small 0
@@ -8103,8 +8087,8 @@ RCVD REDY
 t:      37089 job   890 on # 1 of server medium COMPLETED
 SENT JCPL 37089 890 medium 1
 RCVD REDY
-t:      37097 job   865 on # 1 of server xlarge COMPLETED
-SENT JCPL 37097 865 xlarge 1
+t:      37097 job   865 on # 2 of server xlarge COMPLETED
+SENT JCPL 37097 865 xlarge 2
 RCVD REDY
 t:      37099 job   899 on # 7 of server small COMPLETED
 SENT JCPL 37099 899 small 7
@@ -8187,8 +8171,8 @@ t:      37575 job   925 (running) on # 1 of server large (active) SCHEDULED
 t:      37575 job   925 on # 1 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      37603 job   852 on # 2 of server xlarge COMPLETED
-SENT JCPL 37603 852 xlarge 2
+t:      37603 job   852 on # 1 of server xlarge COMPLETED
+SENT JCPL 37603 852 xlarge 1
 RCVD REDY
 SENT JOBN 37654 926 6439 14 4000 30500
 RCVD SCHD 926 large 2
@@ -8196,8 +8180,8 @@ t:      37654 job   926 (running) on # 2 of server large (active) SCHEDULED
 t:      37654 job   926 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      37670 job   881 on # 3 of server xlarge COMPLETED
-SENT JCPL 37670 881 xlarge 3
+t:      37670 job   881 on # 7 of server xlarge COMPLETED
+SENT JCPL 37670 881 xlarge 7
 RCVD REDY
 t:      37698 job   750 on # 2 of server tiny COMPLETED
 t:      37698 job   755 on # 2 of server tiny RUNNING
@@ -8229,6 +8213,9 @@ RCVD SCHD 930 large 4
 t:      37886 job   930 (running) on # 4 of server large (active) SCHEDULED
 t:      37886 job   930 on # 4 of server large RUNNING
 SENT OK
+RCVD REDY
+t:      37894 job   805 on # 3 of server xlarge COMPLETED
+SENT JCPL 37894 805 xlarge 3
 RCVD REDY
 SENT JOBN 37906 931 960 4 1800 2100
 RCVD SCHD 931 small 8
@@ -8287,8 +8274,8 @@ t:      38098 job   938 (running) on # 2 of server medium (active) SCHEDULED
 t:      38098 job   938 on # 2 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      38109 job   894 on # 5 of server xlarge COMPLETED
-SENT JCPL 38109 894 xlarge 5
+t:      38109 job   894 on # 8 of server xlarge COMPLETED
+SENT JCPL 38109 894 xlarge 8
 RCVD REDY
 SENT JOBN 38127 939 3396 3 500 5700
 RCVD SCHD 939 medium 2
@@ -8372,9 +8359,9 @@ t:      38246 job   951 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38246 952 348 13 14700 7300
-RCVD SCHD 952 xlarge 2
-t:      38246 job   952 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      38246 job   952 on # 2 of server xlarge RUNNING
+RCVD SCHD 952 xlarge 1
+t:      38246 job   952 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      38246 job   952 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38248 953 2268 2 600 3600
@@ -8411,9 +8398,9 @@ t:      38261 job   880 on # 9 of server large COMPLETED
 SENT JCPL 38261 880 large 9
 RCVD REDY
 SENT JOBN 38262 958 625 21 8800 81200
-RCVD SCHD 958 xlarge 3
-t:      38262 job   958 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      38262 job   958 on # 3 of server xlarge RUNNING
+RCVD SCHD 958 xlarge 4
+t:      38262 job   958 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      38262 job   958 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38263 959 1805 4 3400 8000
@@ -8465,13 +8452,13 @@ t:      38274 job   966 on # 9 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38276 967 4 10 11800 38400
-RCVD SCHD 967 xlarge 3
-t:      38276 job   967 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      38276 job   967 on # 3 of server xlarge RUNNING
+RCVD SCHD 967 xlarge 2
+t:      38276 job   967 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      38276 job   967 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      38279 job   967 on # 3 of server xlarge COMPLETED
-SENT JCPL 38279 967 xlarge 3
+t:      38279 job   967 on # 2 of server xlarge COMPLETED
+SENT JCPL 38279 967 xlarge 2
 RCVD REDY
 SENT JOBN 38280 968 1226 4 4000 1300
 RCVD SCHD 968 xlarge 0
@@ -8480,9 +8467,9 @@ t:      38280 job   968 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38284 969 999 10 3300 23400
-RCVD SCHD 969 xlarge 3
-t:      38284 job   969 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      38284 job   969 on # 3 of server xlarge RUNNING
+RCVD SCHD 969 xlarge 2
+t:      38284 job   969 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      38284 job   969 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      38285 job   945 on # 6 of server large COMPLETED
@@ -8501,27 +8488,27 @@ t:      38289 job   971 on # 6 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38289 972 1261 4 4200 6300
-RCVD SCHD 972 xlarge 2
-t:      38289 job   972 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      38289 job   972 on # 2 of server xlarge RUNNING
+RCVD SCHD 972 xlarge 1
+t:      38289 job   972 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      38289 job   972 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38292 973 1294 8 6300 3800
-RCVD SCHD 973 xlarge 5
-t:      38292 job   973 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      38292 job   973 on # 5 of server xlarge RUNNING
+RCVD SCHD 973 xlarge 4
+t:      38292 job   973 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      38292 job   973 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38295 974 5950 3 500 1900
-RCVD SCHD 974 xlarge 4
-t:      38295 job   974 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      38295 job   974 on # 4 of server xlarge RUNNING
+RCVD SCHD 974 xlarge 1
+t:      38295 job   974 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      38295 job   974 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38304 975 214 10 19200 23900
-RCVD SCHD 975 xlarge 6
-t:      38304 job   975 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      38304 job   975 on # 6 of server xlarge RUNNING
+RCVD SCHD 975 xlarge 5
+t:      38304 job   975 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      38304 job   975 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      38325 job   905 on # 4 of server tiny COMPLETED
@@ -8552,8 +8539,8 @@ RCVD REDY
 t:      38516 job   912 on # 1 of server tiny COMPLETED
 SENT JCPL 38516 912 tiny 1
 RCVD REDY
-t:      38597 job   952 on # 2 of server xlarge COMPLETED
-SENT JCPL 38597 952 xlarge 2
+t:      38597 job   952 on # 1 of server xlarge COMPLETED
+SENT JCPL 38597 952 xlarge 1
 RCVD REDY
 SENT JOBN 38607 977 226 1 500 1500
 RCVD SCHD 977 tiny 0
@@ -8571,22 +8558,22 @@ t:      38673 job   906 on # 8 of server medium COMPLETED
 SENT JCPL 38673 906 medium 8
 RCVD REDY
 SENT JOBN 38686 979 1190 11 17200 42200
-RCVD SCHD 979 xlarge 2
-t:      38686 job   979 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      38686 job   979 on # 2 of server xlarge RUNNING
+RCVD SCHD 979 xlarge 1
+t:      38686 job   979 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      38686 job   979 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 38705 980 8606 9 6200 7200
-RCVD SCHD 980 xlarge 7
-t:      38705 job   980 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      38705 job   980 on # 7 of server xlarge RUNNING
+RCVD SCHD 980 xlarge 8
+t:      38705 job   980 (running) on # 8 of server xlarge (active) SCHEDULED
+t:      38705 job   980 on # 8 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      38776 job   916 on # 3 of server small COMPLETED
 SENT JCPL 38776 916 small 3
 RCVD REDY
-t:      38812 job   909 on # 1 of server xlarge COMPLETED
-SENT JCPL 38812 909 xlarge 1
+t:      38812 job   909 on # 2 of server xlarge COMPLETED
+SENT JCPL 38812 909 xlarge 2
 RCVD REDY
 t:      38827 job   895 on # 5 of server small COMPLETED
 SENT JCPL 38827 895 small 5
@@ -8597,16 +8584,16 @@ t:      38835 job   981 (running) on # 3 of server small (active) SCHEDULED
 t:      38835 job   981 on # 3 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      38838 job   877 on # 4 of server xlarge COMPLETED
-SENT JCPL 38838 877 xlarge 4
+t:      38838 job   877 on # 6 of server xlarge COMPLETED
+SENT JCPL 38838 877 xlarge 6
 RCVD REDY
-t:      38842 job   969 on # 3 of server xlarge COMPLETED
-SENT JCPL 38842 969 xlarge 3
+t:      38842 job   969 on # 2 of server xlarge COMPLETED
+SENT JCPL 38842 969 xlarge 2
 RCVD REDY
 SENT JOBN 38844 982 3634 28 41900 133500
-RCVD SCHD 982 xlarge 4
-t:      38844 job   982 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      38844 job   982 on # 4 of server xlarge RUNNING
+RCVD SCHD 982 xlarge 2
+t:      38844 job   982 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      38844 job   982 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      38845 job   977 on # 0 of server tiny COMPLETED
@@ -8616,16 +8603,20 @@ t:      38913 job   944 on # 1 of server large COMPLETED
 SENT JCPL 38913 944 large 1
 RCVD REDY
 SENT JOBN 38937 983 201 21 28900 41700
-RCVD SCHD 983 xlarge 8
-t:      38937 job   983 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      38937 job   983 on # 8 of server xlarge RUNNING
+RCVD SCHD 983 xlarge 6
+t:      38937 job   983 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      38937 job   983 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      38993 job   915 on # 5 of server tiny COMPLETED
 SENT JCPL 38993 915 tiny 5
 RCVD REDY
-t:      39001 job   868 on # 2 of server xlarge COMPLETED
-SENT JCPL 39001 868 xlarge 2
+t:      39001 job   868 on # 7 of server xlarge COMPLETED
+SENT JCPL 39001 868 xlarge 7
+RCVD REDY
+t:      39006 job   714 on # 3 of server xlarge COMPLETED
+t:      39006 job   869 on # 3 of server xlarge RUNNING
+SENT JCPL 39006 714 xlarge 3
 RCVD REDY
 t:      39009 job   918 on # 4 of server small COMPLETED
 SENT JCPL 39009 918 small 4
@@ -8648,8 +8639,8 @@ t:      39066 job   986 (running) on # 7 of server large (active) SCHEDULED
 t:      39066 job   986 on # 7 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      39074 job   973 on # 5 of server xlarge COMPLETED
-SENT JCPL 39074 973 xlarge 5
+t:      39074 job   973 on # 4 of server xlarge COMPLETED
+SENT JCPL 39074 973 xlarge 4
 RCVD REDY
 t:      39116 job   984 on # 4 of server small COMPLETED
 SENT JCPL 39116 984 small 4
@@ -8669,8 +8660,8 @@ RCVD REDY
 t:      39230 job   863 on # 9 of server small COMPLETED
 SENT JCPL 39230 863 small 9
 RCVD REDY
-t:      39237 job   972 on # 2 of server xlarge COMPLETED
-SENT JCPL 39237 972 xlarge 2
+t:      39237 job   972 on # 1 of server xlarge COMPLETED
+SENT JCPL 39237 972 xlarge 1
 RCVD REDY
 SENT JOBN 39270 988 97 1 600 1000
 RCVD SCHD 988 tiny 0
@@ -8693,8 +8684,8 @@ t:      39364 job   990 (running) on # 0 of server small (active) SCHEDULED
 t:      39364 job   990 on # 0 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      39365 job   979 on # 2 of server xlarge COMPLETED
-SENT JCPL 39365 979 xlarge 2
+t:      39365 job   979 on # 1 of server xlarge COMPLETED
+SENT JCPL 39365 979 xlarge 1
 RCVD REDY
 SENT JOBN 39388 991 687 8 3400 2800
 RCVD SCHD 991 xlarge 1
@@ -8713,9 +8704,9 @@ t:      39449 job   988 on # 0 of server tiny COMPLETED
 SENT JCPL 39449 988 tiny 0
 RCVD REDY
 SENT JOBN 39466 992 1352 12 10100 30900
-RCVD SCHD 992 xlarge 1
-t:      39466 job   992 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      39466 job   992 on # 1 of server xlarge RUNNING
+RCVD SCHD 992 xlarge 7
+t:      39466 job   992 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      39466 job   992 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      39470 job   908 on # 1 of server medium COMPLETED
@@ -8734,24 +8725,24 @@ t:      39571 job   968 on # 0 of server xlarge COMPLETED
 SENT JCPL 39571 968 xlarge 0
 RCVD REDY
 SENT JOBN 39617 993 825 16 12000 8000
-RCVD SCHD 993 xlarge 2
-t:      39617 job   993 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      39617 job   993 on # 2 of server xlarge RUNNING
+RCVD SCHD 993 xlarge 9
+t:      39617 job   993 (running) on # 9 of server xlarge (active) SCHEDULED
+t:      39617 job   993 on # 9 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      39654 job   940 on # 0 of server tiny COMPLETED
 SENT JCPL 39654 940 tiny 0
 RCVD REDY
-t:      39670 job   983 on # 8 of server xlarge COMPLETED
-SENT JCPL 39670 983 xlarge 8
+t:      39670 job   983 on # 6 of server xlarge COMPLETED
+SENT JCPL 39670 983 xlarge 6
 RCVD REDY
 t:      39678 job   937 on # 1 of server medium COMPLETED
 SENT JCPL 39678 937 medium 1
 RCVD REDY
 SENT JOBN 39707 994 4381 12 20600 1900
-RCVD SCHD 994 xlarge 2
-t:      39707 job   994 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      39707 job   994 on # 2 of server xlarge RUNNING
+RCVD SCHD 994 xlarge 6
+t:      39707 job   994 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      39707 job   994 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      39713 job   871 on # 5 of server medium COMPLETED
@@ -8775,8 +8766,8 @@ RCVD REDY
 t:      39816 job   843 on # 6 of server small COMPLETED
 SENT JCPL 39816 843 small 6
 RCVD REDY
-t:      39841 job   958 on # 3 of server xlarge COMPLETED
-SENT JCPL 39841 958 xlarge 3
+t:      39841 job   958 on # 4 of server xlarge COMPLETED
+SENT JCPL 39841 958 xlarge 4
 RCVD REDY
 SENT JOBN 39935 996 15 3 1100 4400
 RCVD SCHD 996 small 5
@@ -8790,8 +8781,8 @@ t:      39935 job   997 (running) on # 1 of server medium (active) SCHEDULED
 t:      39935 job   997 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      39938 job   975 on # 6 of server xlarge COMPLETED
-SENT JCPL 39938 975 xlarge 6
+t:      39938 job   975 on # 5 of server xlarge COMPLETED
+SENT JCPL 39938 975 xlarge 5
 RCVD REDY
 t:      39956 job   870 on # 8 of server tiny COMPLETED
 SENT JCPL 39956 870 tiny 8
@@ -8803,9 +8794,9 @@ t:      39992 job   917 on # 0 of server medium COMPLETED
 SENT JCPL 39992 917 medium 0
 RCVD REDY
 SENT JOBN 39998 998 5089 12 8800 11900
-RCVD SCHD 998 xlarge 3
-t:      39998 job   998 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      39998 job   998 on # 3 of server xlarge RUNNING
+RCVD SCHD 998 xlarge 1
+t:      39998 job   998 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      39998 job   998 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      40086 job   981 on # 3 of server small COMPLETED
@@ -8919,6 +8910,12 @@ t:      40845 job  1006 (running) on # 2 of server small (active) SCHEDULED
 t:      40845 job  1006 on # 2 of server small RUNNING
 SENT OK
 RCVD REDY
+t:      40852 job   810 on # 3 of server xlarge COMPLETED
+SENT JCPL 40852 810 xlarge 3
+RCVD REDY
+t:      40914 job   869 on # 3 of server xlarge COMPLETED
+SENT JCPL 40914 869 xlarge 3
+RCVD REDY
 t:      40920 job   978 on # 4 of server tiny COMPLETED
 SENT JCPL 40920 978 tiny 4
 RCVD REDY
@@ -8927,6 +8924,9 @@ RCVD SCHD 1007 medium 0
 t:      40930 job  1007 (running) on # 0 of server medium (active) SCHEDULED
 t:      40930 job  1007 on # 0 of server medium RUNNING
 SENT OK
+RCVD REDY
+t:      40953 job   804 on # 3 of server xlarge COMPLETED
+SENT JCPL 40953 804 xlarge 3
 RCVD REDY
 t:      40962 job   904 on # 9 of server tiny COMPLETED
 SENT JCPL 40962 904 tiny 9
@@ -8955,8 +8955,8 @@ t:      41106 job  1010 (running) on # 9 of server small (active) SCHEDULED
 t:      41106 job  1010 on # 9 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      41121 job   883 on # 6 of server xlarge COMPLETED
-SENT JCPL 41121 883 xlarge 6
+t:      41121 job   883 on # 8 of server xlarge COMPLETED
+SENT JCPL 41121 883 xlarge 8
 RCVD REDY
 SENT JOBN 41170 1011 6237 4 3000 2700
 RCVD SCHD 1011 medium 2
@@ -8991,8 +8991,8 @@ RCVD REDY
 t:      41277 job   928 on # 7 of server medium COMPLETED
 SENT JCPL 41277 928 medium 7
 RCVD REDY
-t:      41278 job   974 on # 4 of server xlarge COMPLETED
-SENT JCPL 41278 974 xlarge 4
+t:      41278 job   974 on # 1 of server xlarge COMPLETED
+SENT JCPL 41278 974 xlarge 1
 RCVD REDY
 SENT JOBN 41301 1014 4882 12 13900 18200
 RCVD SCHD 1014 large 1
@@ -9024,8 +9024,8 @@ RCVD REDY
 t:      41424 job   948 on # 5 of server tiny COMPLETED
 SENT JCPL 41424 948 tiny 5
 RCVD REDY
-t:      41446 job   993 on # 2 of server xlarge COMPLETED
-SENT JCPL 41446 993 xlarge 2
+t:      41446 job   993 on # 9 of server xlarge COMPLETED
+SENT JCPL 41446 993 xlarge 9
 RCVD REDY
 SENT JOBN 41474 1017 4180 12 8000 15000
 RCVD SCHD 1017 large 5
@@ -9067,9 +9067,9 @@ t:      41636 job   942 on # 5 of server medium COMPLETED
 SENT JCPL 41636 942 medium 5
 RCVD REDY
 SENT JOBN 41654 1022 3200 23 65600 3000
-RCVD SCHD 1022 xlarge 5
-t:      41654 job  1022 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      41654 job  1022 on # 5 of server xlarge RUNNING
+RCVD SCHD 1022 xlarge 3
+t:      41654 job  1022 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      41654 job  1022 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      41660 job   960 on # 9 of server small COMPLETED
@@ -9096,8 +9096,8 @@ RCVD REDY
 t:      41777 job   956 on # 5 of server medium COMPLETED
 SENT JCPL 41777 956 medium 5
 RCVD REDY
-t:      41816 job   982 on # 4 of server xlarge COMPLETED
-SENT JCPL 41816 982 xlarge 4
+t:      41816 job   982 on # 2 of server xlarge COMPLETED
+SENT JCPL 41816 982 xlarge 2
 RCVD REDY
 SENT JOBN 41817 1025 127 17 6200 18900
 RCVD SCHD 1025 xlarge 1
@@ -9128,9 +9128,9 @@ t:      41914 job  1028 on # 7 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 41917 1029 2524 25 35900 2800
-RCVD SCHD 1029 xlarge 4
-t:      41917 job  1029 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      41917 job  1029 on # 4 of server xlarge RUNNING
+RCVD SCHD 1029 xlarge 2
+t:      41917 job  1029 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      41917 job  1029 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 41924 1030 2651 6 1900 2100
@@ -9233,9 +9233,9 @@ t:      42002 job  1045 on # 8 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42003 1046 2312 7 1000 1000
-RCVD SCHD 1046 xlarge 2
-t:      42003 job  1046 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      42003 job  1046 on # 2 of server xlarge RUNNING
+RCVD SCHD 1046 xlarge 3
+t:      42003 job  1046 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      42003 job  1046 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42005 1047 316 2 400 3100
@@ -9245,9 +9245,9 @@ t:      42005 job  1047 on # 9 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42006 1048 1586 13 12400 47800
-RCVD SCHD 1048 xlarge 3
-t:      42006 job  1048 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      42006 job  1048 on # 3 of server xlarge RUNNING
+RCVD SCHD 1048 xlarge 4
+t:      42006 job  1048 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      42006 job  1048 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42006 1049 1636 1 700 300
@@ -9263,9 +9263,9 @@ t:      42007 job  1050 on # 3 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42011 1051 1144 5 3500 7700
-RCVD SCHD 1051 xlarge 2
-t:      42011 job  1051 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      42011 job  1051 on # 2 of server xlarge RUNNING
+RCVD SCHD 1051 xlarge 4
+t:      42011 job  1051 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      42011 job  1051 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42011 1052 428 2 200 2300
@@ -9287,18 +9287,18 @@ t:      42016 job  1054 on # 4 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42018 1055 3 24 15600 35400
-RCVD SCHD 1055 xlarge 6
-t:      42018 job  1055 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      42018 job  1055 on # 6 of server xlarge RUNNING
+RCVD SCHD 1055 xlarge 5
+t:      42018 job  1055 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      42018 job  1055 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      42021 job  1055 on # 6 of server xlarge COMPLETED
-SENT JCPL 42021 1055 xlarge 6
+t:      42021 job  1055 on # 5 of server xlarge COMPLETED
+SENT JCPL 42021 1055 xlarge 5
 RCVD REDY
 SENT JOBN 42021 1056 4262 8 6500 10700
-RCVD SCHD 1056 xlarge 5
-t:      42021 job  1056 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      42021 job  1056 on # 5 of server xlarge RUNNING
+RCVD SCHD 1056 xlarge 4
+t:      42021 job  1056 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      42021 job  1056 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42021 1057 6093 1 800 900
@@ -9308,9 +9308,9 @@ t:      42021 job  1057 on # 5 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42023 1058 2677 7 5400 3300
-RCVD SCHD 1058 xlarge 3
-t:      42023 job  1058 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      42023 job  1058 on # 3 of server xlarge RUNNING
+RCVD SCHD 1058 xlarge 5
+t:      42023 job  1058 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      42023 job  1058 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42025 1059 2757 3 2100 4800
@@ -9338,9 +9338,9 @@ t:      42030 job  1062 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42034 1063 2662 13 25700 23400
-RCVD SCHD 1063 xlarge 6
-t:      42034 job  1063 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      42034 job  1063 on # 6 of server xlarge RUNNING
+RCVD SCHD 1063 xlarge 5
+t:      42034 job  1063 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      42034 job  1063 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42038 1064 1059 1 200 1200
@@ -9350,16 +9350,16 @@ t:      42038 job  1064 on # 7 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42047 1065 4395 10 16700 30000
-RCVD SCHD 1065 xlarge 6
-t:      42047 job  1065 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      42047 job  1065 on # 6 of server xlarge RUNNING
+RCVD SCHD 1065 xlarge 5
+t:      42047 job  1065 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      42047 job  1065 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      42323 job  1009 on # 1 of server small COMPLETED
 SENT JCPL 42323 1009 small 1
 RCVD REDY
-t:      42376 job   992 on # 1 of server xlarge COMPLETED
-SENT JCPL 42376 992 xlarge 1
+t:      42376 job   992 on # 7 of server xlarge COMPLETED
+SENT JCPL 42376 992 xlarge 7
 RCVD REDY
 t:      42384 job  1021 on # 6 of server large COMPLETED
 SENT JCPL 42384 1021 large 6
@@ -9379,13 +9379,13 @@ t:      42465 job  1067 (running) on # 6 of server large (active) SCHEDULED
 t:      42465 job  1067 on # 6 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      42536 job   994 on # 2 of server xlarge COMPLETED
-SENT JCPL 42536 994 xlarge 2
+t:      42536 job   994 on # 6 of server xlarge COMPLETED
+SENT JCPL 42536 994 xlarge 6
 RCVD REDY
 SENT JOBN 42558 1068 4423 16 18000 8100
-RCVD SCHD 1068 xlarge 7
-t:      42558 job  1068 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      42558 job  1068 on # 7 of server xlarge RUNNING
+RCVD SCHD 1068 xlarge 6
+t:      42558 job  1068 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      42558 job  1068 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      42576 job  1038 on # 6 of server medium COMPLETED
@@ -9450,9 +9450,9 @@ t:      42802 job  1073 on # 1 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42927 1074 2428 14 24400 38500
-RCVD SCHD 1074 xlarge 8
-t:      42927 job  1074 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      42927 job  1074 on # 8 of server xlarge RUNNING
+RCVD SCHD 1074 xlarge 6
+t:      42927 job  1074 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      42927 job  1074 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      42948 job   999 on # 3 of server small COMPLETED
@@ -9471,9 +9471,9 @@ t:      42978 job  1075 on # 4 of server medium RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 42983 1076 3973 13 20900 16400
-RCVD SCHD 1076 xlarge 2
-t:      42983 job  1076 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      42983 job  1076 on # 2 of server xlarge RUNNING
+RCVD SCHD 1076 xlarge 7
+t:      42983 job  1076 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      42983 job  1076 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      43073 job  1018 on # 7 of server small COMPLETED
@@ -9495,9 +9495,9 @@ t:      43109 job  1078 on # 6 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 43121 1079 2054 13 3300 16700
-RCVD SCHD 1079 xlarge 8
-t:      43121 job  1079 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      43121 job  1079 on # 8 of server xlarge RUNNING
+RCVD SCHD 1079 xlarge 7
+t:      43121 job  1079 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      43121 job  1079 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      43185 job   775 on # 2 of server tiny COMPLETED
@@ -9524,8 +9524,8 @@ RCVD REDY
 t:      43278 job   985 on # 8 of server medium COMPLETED
 SENT JCPL 43278 985 medium 8
 RCVD REDY
-t:      43292 job  1046 on # 2 of server xlarge COMPLETED
-SENT JCPL 43292 1046 xlarge 2
+t:      43292 job  1046 on # 3 of server xlarge COMPLETED
+SENT JCPL 43292 1046 xlarge 3
 RCVD REDY
 t:      43336 job  1010 on # 9 of server small COMPLETED
 SENT JCPL 43336 1010 small 9
@@ -9560,8 +9560,8 @@ RCVD REDY
 t:      43535 job  1032 on # 8 of server large COMPLETED
 SENT JCPL 43535 1032 large 8
 RCVD REDY
-t:      43547 job  1029 on # 4 of server xlarge COMPLETED
-SENT JCPL 43547 1029 xlarge 4
+t:      43547 job  1029 on # 2 of server xlarge COMPLETED
+SENT JCPL 43547 1029 xlarge 2
 RCVD REDY
 t:      43568 job  1016 on # 7 of server medium COMPLETED
 SENT JCPL 43568 1016 medium 7
@@ -9578,8 +9578,8 @@ RCVD REDY
 t:      43654 job  1070 on # 3 of server large COMPLETED
 SENT JCPL 43654 1070 large 3
 RCVD REDY
-t:      43694 job  1063 on # 6 of server xlarge COMPLETED
-SENT JCPL 43694 1063 xlarge 6
+t:      43694 job  1063 on # 5 of server xlarge COMPLETED
+SENT JCPL 43694 1063 xlarge 5
 RCVD REDY
 SENT JOBN 43708 1084 5846 4 4200 2600
 RCVD SCHD 1084 small 6
@@ -9662,8 +9662,8 @@ RCVD REDY
 t:      44290 job  1033 on # 3 of server medium COMPLETED
 SENT JCPL 44290 1033 medium 3
 RCVD REDY
-t:      44317 job  1056 on # 5 of server xlarge COMPLETED
-SENT JCPL 44317 1056 xlarge 5
+t:      44317 job  1056 on # 4 of server xlarge COMPLETED
+SENT JCPL 44317 1056 xlarge 4
 RCVD REDY
 SENT JOBN 44319 1092 3521 4 1900 4400
 RCVD SCHD 1092 small 9
@@ -9671,8 +9671,8 @@ t:      44319 job  1092 (running) on # 9 of server small (active) SCHEDULED
 t:      44319 job  1092 on # 9 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      44340 job  1074 on # 8 of server xlarge COMPLETED
-SENT JCPL 44340 1074 xlarge 8
+t:      44340 job  1074 on # 6 of server xlarge COMPLETED
+SENT JCPL 44340 1074 xlarge 6
 RCVD REDY
 t:      44391 job  1017 on # 5 of server large COMPLETED
 SENT JCPL 44391 1017 large 5
@@ -9704,14 +9704,14 @@ RCVD REDY
 t:      44566 job  1035 on # 9 of server large COMPLETED
 SENT JCPL 44566 1035 large 9
 RCVD REDY
-t:      44629 job   980 on # 7 of server xlarge COMPLETED
-SENT JCPL 44629 980 xlarge 7
+t:      44629 job   980 on # 8 of server xlarge COMPLETED
+SENT JCPL 44629 980 xlarge 8
 RCVD REDY
-t:      44632 job  1065 on # 6 of server xlarge COMPLETED
-SENT JCPL 44632 1065 xlarge 6
+t:      44632 job  1065 on # 5 of server xlarge COMPLETED
+SENT JCPL 44632 1065 xlarge 5
 RCVD REDY
-t:      44644 job  1079 on # 8 of server xlarge COMPLETED
-SENT JCPL 44644 1079 xlarge 8
+t:      44644 job  1079 on # 7 of server xlarge COMPLETED
+SENT JCPL 44644 1079 xlarge 7
 RCVD REDY
 SENT JOBN 44647 1095 643 3 1300 700
 RCVD SCHD 1095 small 5
@@ -9776,8 +9776,8 @@ t:      44810 job  1103 (running) on # 0 of server large (active) SCHEDULED
 t:      44810 job  1103 on # 0 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      44825 job  1068 on # 7 of server xlarge COMPLETED
-SENT JCPL 44825 1068 xlarge 7
+t:      44825 job  1068 on # 6 of server xlarge COMPLETED
+SENT JCPL 44825 1068 xlarge 6
 RCVD REDY
 t:      44831 job  1060 on # 8 of server large COMPLETED
 SENT JCPL 44831 1060 large 8
@@ -9794,8 +9794,8 @@ t:      44908 job  1104 (running) on # 6 of server medium (active) SCHEDULED
 t:      44908 job  1104 on # 6 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      44915 job  1048 on # 3 of server xlarge COMPLETED
-SENT JCPL 44915 1048 xlarge 3
+t:      44915 job  1048 on # 4 of server xlarge COMPLETED
+SENT JCPL 44915 1048 xlarge 4
 RCVD REDY
 SENT JOBN 44922 1105 4229 2 500 200
 RCVD SCHD 1105 tiny 3
@@ -9833,11 +9833,11 @@ t:      45121 job  1108 (running) on # 3 of server small (active) SCHEDULED
 t:      45121 job  1108 on # 3 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      45125 job  1051 on # 2 of server xlarge COMPLETED
-SENT JCPL 45125 1051 xlarge 2
+t:      45125 job  1051 on # 4 of server xlarge COMPLETED
+SENT JCPL 45125 1051 xlarge 4
 RCVD REDY
-t:      45152 job  1022 on # 5 of server xlarge COMPLETED
-SENT JCPL 45152 1022 xlarge 5
+t:      45152 job  1022 on # 3 of server xlarge COMPLETED
+SENT JCPL 45152 1022 xlarge 3
 RCVD REDY
 SENT JOBN 45158 1109 3511 3 900 1100
 RCVD SCHD 1109 medium 1
@@ -9878,8 +9878,8 @@ RCVD REDY
 t:      45367 job  1080 on # 3 of server large COMPLETED
 SENT JCPL 45367 1080 large 3
 RCVD REDY
-t:      45386 job  1076 on # 2 of server xlarge COMPLETED
-SENT JCPL 45386 1076 xlarge 2
+t:      45386 job  1076 on # 7 of server xlarge COMPLETED
+SENT JCPL 45386 1076 xlarge 7
 RCVD REDY
 SENT JOBN 45386 1113 2605 2 1700 1000
 RCVD SCHD 1113 medium 2
@@ -9896,8 +9896,8 @@ RCVD REDY
 t:      45524 job  1047 on # 9 of server tiny COMPLETED
 SENT JCPL 45524 1047 tiny 9
 RCVD REDY
-t:      45526 job   998 on # 3 of server xlarge COMPLETED
-SENT JCPL 45526 998 xlarge 3
+t:      45526 job   998 on # 1 of server xlarge COMPLETED
+SENT JCPL 45526 998 xlarge 1
 RCVD REDY
 SENT JOBN 45528 1115 2392 4 2600 900
 RCVD SCHD 1115 medium 3
@@ -10121,8 +10121,8 @@ t:      46073 job  1144 (running) on # 2 of server large (active) SCHEDULED
 t:      46073 job  1144 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      46085 job  1058 on # 3 of server xlarge COMPLETED
-SENT JCPL 46085 1058 xlarge 3
+t:      46085 job  1058 on # 5 of server xlarge COMPLETED
+SENT JCPL 46085 1058 xlarge 5
 RCVD REDY
 t:      46097 job  1101 on # 2 of server medium COMPLETED
 SENT JCPL 46097 1101 medium 2
@@ -11025,8 +11025,8 @@ t:      50324 job  1243 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 50328 1244 3965 23 8100 39200
-RCVD SCHD 1244 xlarge 2
-t:      50328 job  1244 (waiting) on # 2 of server xlarge (active) SCHEDULED
+RCVD SCHD 1244 xlarge 5
+t:      50328 job  1244 (waiting) on # 5 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 50328 1245 4101 11 1600 44100
@@ -11083,7 +11083,6 @@ t:      50545 job  1249 on # 4 of server large RUNNING
 SENT OK
 RCVD REDY
 t:      50553 job  1198 on # 2 of server xlarge COMPLETED
-t:      50553 job  1244 on # 2 of server xlarge RUNNING
 SENT JCPL 50553 1198 xlarge 2
 RCVD REDY
 t:      50572 job  1202 on # 1 of server large COMPLETED
@@ -11098,9 +11097,9 @@ t:      50586 job  1225 on # 2 of server small COMPLETED
 SENT JCPL 50586 1225 small 2
 RCVD REDY
 SENT JOBN 50618 1251 2389 14 13600 29000
-RCVD SCHD 1251 xlarge 3
-t:      50618 job  1251 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      50618 job  1251 on # 3 of server xlarge RUNNING
+RCVD SCHD 1251 xlarge 2
+t:      50618 job  1251 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      50618 job  1251 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 50646 1252 1 6 2100 1800
@@ -11130,9 +11129,9 @@ t:      50691 job  1255 on # 5 of server medium RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 50732 1256 4396 15 22100 26500
-RCVD SCHD 1256 xlarge 3
-t:      50732 job  1256 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      50732 job  1256 on # 3 of server xlarge RUNNING
+RCVD SCHD 1256 xlarge 2
+t:      50732 job  1256 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      50732 job  1256 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      50737 job  1221 on # 6 of server large COMPLETED
@@ -11242,8 +11241,9 @@ t:      51433 job  1228 on # 6 of server small COMPLETED
 SENT JCPL 51433 1228 small 6
 RCVD REDY
 SENT JOBN 51454 1268 111 22 48700 31300
-RCVD SCHD 1268 xlarge 5
-t:      51454 job  1268 (waiting) on # 5 of server xlarge (active) SCHEDULED
+RCVD SCHD 1268 xlarge 3
+t:      51454 job  1268 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      51454 job  1268 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      51461 job  1187 on # 8 of server medium COMPLETED
@@ -11286,6 +11286,9 @@ t:      51661 job  1271 (running) on # 0 of server tiny (active) SCHEDULED
 t:      51661 job  1271 on # 0 of server tiny RUNNING
 SENT OK
 RCVD REDY
+t:      51694 job  1268 on # 3 of server xlarge COMPLETED
+SENT JCPL 51694 1268 xlarge 3
+RCVD REDY
 t:      51712 job  1215 on # 0 of server small COMPLETED
 SENT JCPL 51712 1215 small 0
 RCVD REDY
@@ -11304,7 +11307,7 @@ t:      51729 job  1117 on # 2 of server tiny COMPLETED
 SENT JCPL 51729 1117 tiny 2
 RCVD REDY
 t:      51805 job  1231 on # 5 of server xlarge COMPLETED
-t:      51805 job  1268 on # 5 of server xlarge RUNNING
+t:      51805 job  1244 on # 5 of server xlarge RUNNING
 SENT JCPL 51805 1231 xlarge 5
 RCVD REDY
 SENT JOBN 51876 1273 4208 5 4200 6300
@@ -11328,9 +11331,6 @@ t:      52018 job  1274 (running) on # 4 of server tiny (active) SCHEDULED
 t:      52018 job  1274 on # 4 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      52045 job  1268 on # 5 of server xlarge COMPLETED
-SENT JCPL 52045 1268 xlarge 5
-RCVD REDY
 t:      52103 job  1108 on # 3 of server small COMPLETED
 SENT JCPL 52103 1108 small 3
 RCVD REDY
@@ -11343,8 +11343,8 @@ t:      52111 job  1275 (running) on # 1 of server medium (active) SCHEDULED
 t:      52111 job  1275 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      52115 job  1251 on # 3 of server xlarge COMPLETED
-SENT JCPL 52115 1251 xlarge 3
+t:      52115 job  1251 on # 2 of server xlarge COMPLETED
+SENT JCPL 52115 1251 xlarge 2
 RCVD REDY
 t:      52149 job  1160 on # 4 of server medium COMPLETED
 SENT JCPL 52149 1160 medium 4
@@ -11487,9 +11487,6 @@ SENT JCPL 53155 1289 small 0
 RCVD REDY
 t:      53160 job  1291 on # 6 of server medium COMPLETED
 SENT JCPL 53160 1291 medium 6
-RCVD REDY
-t:      53209 job  1244 on # 2 of server xlarge COMPLETED
-SENT JCPL 53209 1244 xlarge 2
 RCVD REDY
 SENT JOBN 53229 1292 2041 8 8000 5900
 RCVD SCHD 1292 medium 6
@@ -11680,9 +11677,9 @@ t:      53558 job  1297 on # 2 of server large COMPLETED
 SENT JCPL 53558 1297 large 2
 RCVD REDY
 SENT JOBN 53558 1321 5694 16 27800 22500
-RCVD SCHD 1321 xlarge 2
-t:      53558 job  1321 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      53558 job  1321 on # 2 of server xlarge RUNNING
+RCVD SCHD 1321 xlarge 3
+t:      53558 job  1321 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      53558 job  1321 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 53560 1322 1657 8 5400 2600
@@ -11767,9 +11764,9 @@ t:      53603 job  1335 (waiting) on # 1 of server tiny (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 53607 1336 3643 10 10400 8300
-RCVD SCHD 1336 xlarge 5
-t:      53607 job  1336 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      53607 job  1336 on # 5 of server xlarge RUNNING
+RCVD SCHD 1336 xlarge 7
+t:      53607 job  1336 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      53607 job  1336 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 53607 1337 2764 3 2500 2300
@@ -11782,9 +11779,9 @@ t:      53608 job  1311 on # 8 of server medium COMPLETED
 SENT JCPL 53608 1311 medium 8
 RCVD REDY
 SENT JOBN 53608 1338 4393 25 38400 76200
-RCVD SCHD 1338 xlarge 7
-t:      53608 job  1338 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      53608 job  1338 on # 7 of server xlarge RUNNING
+RCVD SCHD 1338 xlarge 9
+t:      53608 job  1338 (running) on # 9 of server xlarge (active) SCHEDULED
+t:      53608 job  1338 on # 9 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      53634 job  1245 on # 0 of server xlarge COMPLETED
@@ -11877,8 +11874,8 @@ RCVD REDY
 t:      54272 job  1330 on # 6 of server xlarge COMPLETED
 SENT JCPL 54272 1330 xlarge 6
 RCVD REDY
-t:      54295 job  1256 on # 3 of server xlarge COMPLETED
-SENT JCPL 54295 1256 xlarge 3
+t:      54295 job  1256 on # 2 of server xlarge COMPLETED
+SENT JCPL 54295 1256 xlarge 2
 RCVD REDY
 t:      54320 job  1314 on # 0 of server large COMPLETED
 SENT JCPL 54320 1314 large 0
@@ -11923,6 +11920,9 @@ SENT OK
 RCVD REDY
 t:      54453 job  1263 on # 7 of server large COMPLETED
 SENT JCPL 54453 1263 large 7
+RCVD REDY
+t:      54461 job  1244 on # 5 of server xlarge COMPLETED
+SENT JCPL 54461 1244 xlarge 5
 RCVD REDY
 SENT JOBN 54481 1352 4326 7 4400 5700
 RCVD SCHD 1352 medium 5
@@ -12264,13 +12264,13 @@ t:      56631 job  1382 on # 3 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 56641 1383 5203 30 96100 49800
-RCVD SCHD 1383 xlarge 3
-t:      56641 job  1383 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      56641 job  1383 on # 3 of server xlarge RUNNING
+RCVD SCHD 1383 xlarge 2
+t:      56641 job  1383 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      56641 job  1383 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      56649 job  1338 on # 7 of server xlarge COMPLETED
-SENT JCPL 56649 1338 xlarge 7
+t:      56649 job  1338 on # 9 of server xlarge COMPLETED
+SENT JCPL 56649 1338 xlarge 9
 RCVD REDY
 t:      56699 job  1292 on # 6 of server medium COMPLETED
 SENT JCPL 56699 1292 medium 6
@@ -12315,8 +12315,8 @@ RCVD REDY
 t:      56891 job  1331 on # 4 of server large COMPLETED
 SENT JCPL 56891 1331 large 4
 RCVD REDY
-t:      56927 job  1336 on # 5 of server xlarge COMPLETED
-SENT JCPL 56927 1336 xlarge 5
+t:      56927 job  1336 on # 7 of server xlarge COMPLETED
+SENT JCPL 56927 1336 xlarge 7
 RCVD REDY
 SENT JOBN 56933 1387 4942 3 1100 500
 RCVD SCHD 1387 small 9
@@ -12556,9 +12556,9 @@ t:      57593 job  1420 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 57595 1421 1690 12 24000 43200
-RCVD SCHD 1421 xlarge 2
-t:      57595 job  1421 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      57595 job  1421 on # 2 of server xlarge RUNNING
+RCVD SCHD 1421 xlarge 3
+t:      57595 job  1421 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      57595 job  1421 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 57598 1422 155 14 14800 28900
@@ -12855,8 +12855,8 @@ t:      58855 job  1455 (running) on # 2 of server tiny (active) SCHEDULED
 t:      58855 job  1455 on # 2 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      58891 job  1421 on # 2 of server xlarge COMPLETED
-SENT JCPL 58891 1421 xlarge 2
+t:      58891 job  1421 on # 3 of server xlarge COMPLETED
+SENT JCPL 58891 1421 xlarge 3
 RCVD REDY
 SENT JOBN 58909 1456 988 5 2700 9500
 RCVD SCHD 1456 medium 1
@@ -12915,8 +12915,8 @@ RCVD REDY
 t:      59339 job  1419 on # 3 of server large COMPLETED
 SENT JCPL 59339 1419 large 3
 RCVD REDY
-t:      59363 job  1321 on # 2 of server xlarge COMPLETED
-SENT JCPL 59363 1321 xlarge 2
+t:      59363 job  1321 on # 3 of server xlarge COMPLETED
+SENT JCPL 59363 1321 xlarge 3
 RCVD REDY
 SENT JOBN 59367 1460 1431 1 1000 1100
 RCVD SCHD 1460 tiny 0
@@ -13029,8 +13029,8 @@ RCVD REDY
 t:      60102 job  1450 on # 3 of server large COMPLETED
 SENT JCPL 60102 1450 large 3
 RCVD REDY
-t:      60127 job  1383 on # 3 of server xlarge COMPLETED
-SENT JCPL 60127 1383 xlarge 3
+t:      60127 job  1383 on # 2 of server xlarge COMPLETED
+SENT JCPL 60127 1383 xlarge 2
 RCVD REDY
 t:      60145 job  1353 on # 5 of server small COMPLETED
 SENT JCPL 60145 1353 small 5
@@ -15359,8 +15359,8 @@ t:      70830 job  1647 on # 5 of server large COMPLETED
 SENT JCPL 70830 1647 large 5
 RCVD REDY
 SENT JOBN 70831 1732 2699 27 10700 27800
-RCVD SCHD 1732 xlarge 1
-t:      70831 job  1732 (waiting) on # 1 of server xlarge (active) SCHEDULED
+RCVD SCHD 1732 xlarge 6
+t:      70831 job  1732 (waiting) on # 6 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 70831 1733 2915 13 16600 14800
@@ -15491,7 +15491,8 @@ SENT JCPL 71432 1745 tiny 5
 RCVD REDY
 SENT JOBN 71450 1746 420 15 24500 56600
 RCVD SCHD 1746 xlarge 1
-t:      71450 job  1746 (waiting) on # 1 of server xlarge (active) SCHEDULED
+t:      71450 job  1746 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      71450 job  1746 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 71465 1747 1537 7 5500 7000
@@ -15567,7 +15568,6 @@ t:      71970 job  1731 on # 8 of server large COMPLETED
 SENT JCPL 71970 1731 large 8
 RCVD REDY
 t:      72007 job  1708 on # 1 of server xlarge COMPLETED
-t:      72007 job  1732 on # 1 of server xlarge RUNNING
 SENT JCPL 72007 1708 xlarge 1
 RCVD REDY
 t:      72028 job  1706 on # 7 of server medium COMPLETED
@@ -15641,6 +15641,9 @@ SENT OK
 RCVD REDY
 t:      72339 job  1715 on # 5 of server medium COMPLETED
 SENT JCPL 72339 1715 medium 5
+RCVD REDY
+t:      72375 job  1746 on # 1 of server xlarge COMPLETED
+SENT JCPL 72375 1746 xlarge 1
 RCVD REDY
 SENT JOBN 72384 1760 2006 5 5200 8500
 RCVD SCHD 1760 medium 5
@@ -15854,9 +15857,9 @@ t:      73607 job  1709 on # 0 of server medium COMPLETED
 SENT JCPL 73607 1709 medium 0
 RCVD REDY
 SENT JOBN 73607 1785 3428 29 72400 63200
-RCVD SCHD 1785 xlarge 2
-t:      73607 job  1785 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      73607 job  1785 on # 2 of server xlarge RUNNING
+RCVD SCHD 1785 xlarge 1
+t:      73607 job  1785 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      73607 job  1785 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73614 1786 3245 8 2300 9700
@@ -16049,9 +16052,9 @@ t:      73685 job  1816 on # 5 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73686 1817 2 7 5200 8900
-RCVD SCHD 1817 xlarge 3
-t:      73686 job  1817 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      73686 job  1817 on # 3 of server xlarge RUNNING
+RCVD SCHD 1817 xlarge 2
+t:      73686 job  1817 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      73686 job  1817 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73690 1818 4363 3 900 4900
@@ -16061,9 +16064,9 @@ t:      73690 job  1818 on # 8 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73693 1819 2103 9 5800 11500
-RCVD SCHD 1819 xlarge 3
-t:      73693 job  1819 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      73693 job  1819 on # 3 of server xlarge RUNNING
+RCVD SCHD 1819 xlarge 2
+t:      73693 job  1819 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      73693 job  1819 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73696 1820 5746 1 300 1000
@@ -16083,20 +16086,21 @@ t:      73703 job  1821 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73703 1822 1449 6 800 3100
-RCVD SCHD 1822 xlarge 3
-t:      73703 job  1822 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      73703 job  1822 on # 3 of server xlarge RUNNING
+RCVD SCHD 1822 xlarge 2
+t:      73703 job  1822 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      73703 job  1822 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73706 1823 4591 6 1800 9700
-RCVD SCHD 1823 xlarge 3
-t:      73706 job  1823 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      73706 job  1823 on # 3 of server xlarge RUNNING
+RCVD SCHD 1823 xlarge 2
+t:      73706 job  1823 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      73706 job  1823 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73708 1824 3126 4 1500 5000
-RCVD SCHD 1824 xlarge 1
-t:      73708 job  1824 (waiting) on # 1 of server xlarge (active) SCHEDULED
+RCVD SCHD 1824 xlarge 2
+t:      73708 job  1824 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      73708 job  1824 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73712 1825 152 1 900 200
@@ -16107,18 +16111,20 @@ SENT OK
 RCVD REDY
 SENT JOBN 73713 1826 709 2 800 1800
 RCVD SCHD 1826 xlarge 1
-t:      73713 job  1826 (waiting) on # 1 of server xlarge (active) SCHEDULED
+t:      73713 job  1826 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      73713 job  1826 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73718 1827 3704 4 2500 1100
-RCVD SCHD 1827 xlarge 1
-t:      73718 job  1827 (waiting) on # 1 of server xlarge (active) SCHEDULED
+RCVD SCHD 1827 xlarge 3
+t:      73718 job  1827 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      73718 job  1827 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 73726 1828 10279 13 22000 51300
-RCVD SCHD 1828 xlarge 4
-t:      73726 job  1828 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      73726 job  1828 on # 4 of server xlarge RUNNING
+RCVD SCHD 1828 xlarge 3
+t:      73726 job  1828 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      73726 job  1828 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      73739 job  1789 on # 5 of server large COMPLETED
@@ -16164,9 +16170,9 @@ t:      73842 job  1736 on # 4 of server tiny COMPLETED
 SENT JCPL 73842 1736 tiny 4
 RCVD REDY
 SENT JOBN 73847 1833 2586 15 29700 9200
-RCVD SCHD 1833 xlarge 4
-t:      73847 job  1833 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      73847 job  1833 on # 4 of server xlarge RUNNING
+RCVD SCHD 1833 xlarge 3
+t:      73847 job  1833 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      73847 job  1833 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      73875 job  1723 on # 3 of server large COMPLETED
@@ -16176,16 +16182,16 @@ t:      73888 job  1678 on # 7 of server xlarge COMPLETED
 SENT JCPL 73888 1678 xlarge 7
 RCVD REDY
 SENT JOBN 73903 1834 44 27 10900 3500
-RCVD SCHD 1834 xlarge 5
-t:      73903 job  1834 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      73903 job  1834 on # 5 of server xlarge RUNNING
+RCVD SCHD 1834 xlarge 4
+t:      73903 job  1834 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      73903 job  1834 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      73912 job  1635 on # 4 of server large COMPLETED
 SENT JCPL 73912 1635 large 4
 RCVD REDY
-t:      73935 job  1834 on # 5 of server xlarge COMPLETED
-SENT JCPL 73935 1834 xlarge 5
+t:      73935 job  1834 on # 4 of server xlarge COMPLETED
+SENT JCPL 73935 1834 xlarge 4
 RCVD REDY
 t:      73960 job  1735 on # 0 of server xlarge COMPLETED
 SENT JCPL 73960 1735 xlarge 0
@@ -16216,9 +16222,9 @@ t:      74027 job  1836 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 74047 1837 1156 31 15500 24600
-RCVD SCHD 1837 xlarge 5
-t:      74047 job  1837 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      74047 job  1837 on # 5 of server xlarge RUNNING
+RCVD SCHD 1837 xlarge 4
+t:      74047 job  1837 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      74047 job  1837 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      74060 job  1761 on # 2 of server small COMPLETED
@@ -16262,25 +16268,18 @@ t:      74290 job  1841 on # 3 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 74291 1842 1218 14 19500 2400
-RCVD SCHD 1842 xlarge 7
-t:      74291 job  1842 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      74291 job  1842 on # 7 of server xlarge RUNNING
+RCVD SCHD 1842 xlarge 5
+t:      74291 job  1842 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      74291 job  1842 on # 5 of server xlarge RUNNING
 SENT OK
-RCVD REDY
-t:      74306 job  1732 on # 1 of server xlarge COMPLETED
-t:      74306 job  1746 on # 1 of server xlarge RUNNING
-t:      74306 job  1824 on # 1 of server xlarge RUNNING
-t:      74306 job  1826 on # 1 of server xlarge RUNNING
-t:      74306 job  1827 on # 1 of server xlarge RUNNING
-SENT JCPL 74306 1732 xlarge 1
 RCVD REDY
 t:      74326 job  1727 on # 8 of server xlarge COMPLETED
 SENT JCPL 74326 1727 xlarge 8
 RCVD REDY
 SENT JOBN 74329 1843 1528 26 49200 116100
-RCVD SCHD 1843 xlarge 8
-t:      74329 job  1843 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      74329 job  1843 on # 8 of server xlarge RUNNING
+RCVD SCHD 1843 xlarge 7
+t:      74329 job  1843 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      74329 job  1843 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      74340 job  1718 on # 4 of server small COMPLETED
@@ -16298,12 +16297,16 @@ RCVD REDY
 t:      74459 job  1651 on # 0 of server tiny COMPLETED
 SENT JCPL 74459 1651 tiny 0
 RCVD REDY
+t:      74479 job  1826 on # 1 of server xlarge COMPLETED
+SENT JCPL 74479 1826 xlarge 1
+RCVD REDY
 t:      74500 job  1749 on # 3 of server tiny COMPLETED
 SENT JCPL 74500 1749 tiny 3
 RCVD REDY
 SENT JOBN 74510 1845 158 25 76700 62100
-RCVD SCHD 1845 xlarge 6
-t:      74510 job  1845 (waiting) on # 6 of server xlarge (active) SCHEDULED
+RCVD SCHD 1845 xlarge 8
+t:      74510 job  1845 (running) on # 8 of server xlarge (active) SCHEDULED
+t:      74510 job  1845 on # 8 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      74518 job  1793 on # 4 of server small COMPLETED
@@ -16339,8 +16342,8 @@ RCVD REDY
 t:      74897 job  1799 on # 6 of server large COMPLETED
 SENT JCPL 74897 1799 large 6
 RCVD REDY
-t:      74902 job  1819 on # 3 of server xlarge COMPLETED
-SENT JCPL 74902 1819 xlarge 3
+t:      74902 job  1819 on # 2 of server xlarge COMPLETED
+SENT JCPL 74902 1819 xlarge 2
 RCVD REDY
 t:      74938 job  1798 on # 6 of server large COMPLETED
 SENT JCPL 74938 1798 large 6
@@ -16350,6 +16353,9 @@ SENT JCPL 74944 1825 large 7
 RCVD REDY
 t:      74953 job  1759 on # 3 of server medium COMPLETED
 SENT JCPL 74953 1759 medium 3
+RCVD REDY
+t:      74956 job  1845 on # 8 of server xlarge COMPLETED
+SENT JCPL 74956 1845 xlarge 8
 RCVD REDY
 SENT JOBN 74956 1847 390 1 500 700
 RCVD SCHD 1847 tiny 0
@@ -16366,9 +16372,6 @@ RCVD REDY
 t:      75055 job  1661 on # 8 of server tiny COMPLETED
 t:      75055 job  1680 on # 8 of server tiny RUNNING
 SENT JCPL 75055 1661 tiny 8
-RCVD REDY
-t:      75072 job  1826 on # 1 of server xlarge COMPLETED
-SENT JCPL 75072 1826 xlarge 1
 RCVD REDY
 SENT JOBN 75091 1848 2293 2 800 1000
 RCVD SCHD 1848 tiny 9
@@ -16388,8 +16391,8 @@ t:      75105 job  1850 (running) on # 5 of server small (active) SCHEDULED
 t:      75105 job  1850 on # 5 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      75121 job  1837 on # 5 of server xlarge COMPLETED
-SENT JCPL 75121 1837 xlarge 5
+t:      75121 job  1837 on # 4 of server xlarge COMPLETED
+SENT JCPL 75121 1837 xlarge 4
 RCVD REDY
 t:      75148 job  1790 on # 2 of server medium COMPLETED
 SENT JCPL 75148 1790 medium 2
@@ -16402,9 +16405,6 @@ SENT OK
 RCVD REDY
 t:      75219 job  1762 on # 7 of server medium COMPLETED
 SENT JCPL 75219 1762 medium 7
-RCVD REDY
-t:      75231 job  1746 on # 1 of server xlarge COMPLETED
-SENT JCPL 75231 1746 xlarge 1
 RCVD REDY
 t:      75242 job  1776 on # 6 of server medium COMPLETED
 SENT JCPL 75242 1776 medium 6
@@ -16488,7 +16488,7 @@ t:      75739 job  1808 on # 9 of server large COMPLETED
 SENT JCPL 75739 1808 large 9
 RCVD REDY
 t:      75765 job  1729 on # 6 of server xlarge COMPLETED
-t:      75765 job  1845 on # 6 of server xlarge RUNNING
+t:      75765 job  1732 on # 6 of server xlarge RUNNING
 SENT JCPL 75765 1729 xlarge 6
 RCVD REDY
 t:      75768 job  1757 on # 6 of server tiny COMPLETED
@@ -16509,14 +16509,17 @@ RCVD REDY
 t:      75863 job  1773 on # 7 of server small COMPLETED
 SENT JCPL 75863 1773 small 7
 RCVD REDY
-t:      75886 job  1817 on # 3 of server xlarge COMPLETED
-SENT JCPL 75886 1817 xlarge 3
+t:      75886 job  1817 on # 2 of server xlarge COMPLETED
+SENT JCPL 75886 1817 xlarge 2
 RCVD REDY
 t:      75908 job  1852 on # 2 of server medium COMPLETED
 SENT JCPL 75908 1852 medium 2
 RCVD REDY
-t:      75913 job  1833 on # 4 of server xlarge COMPLETED
-SENT JCPL 75913 1833 xlarge 4
+t:      75913 job  1833 on # 3 of server xlarge COMPLETED
+SENT JCPL 75913 1833 xlarge 3
+RCVD REDY
+t:      75926 job  1824 on # 2 of server xlarge COMPLETED
+SENT JCPL 75926 1824 xlarge 2
 RCVD REDY
 t:      75931 job  1816 on # 5 of server large COMPLETED
 SENT JCPL 75931 1816 large 5
@@ -16557,17 +16560,14 @@ t:      76151 job  1863 (running) on # 0 of server tiny (active) SCHEDULED
 t:      76151 job  1863 on # 0 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      76184 job  1823 on # 3 of server xlarge COMPLETED
-SENT JCPL 76184 1823 xlarge 3
+t:      76184 job  1823 on # 2 of server xlarge COMPLETED
+SENT JCPL 76184 1823 xlarge 2
 RCVD REDY
 t:      76197 job  1764 on # 5 of server tiny COMPLETED
 SENT JCPL 76197 1764 tiny 5
 RCVD REDY
-t:      76206 job  1843 on # 8 of server xlarge COMPLETED
-SENT JCPL 76206 1843 xlarge 8
-RCVD REDY
-t:      76211 job  1845 on # 6 of server xlarge COMPLETED
-SENT JCPL 76211 1845 xlarge 6
+t:      76206 job  1843 on # 7 of server xlarge COMPLETED
+SENT JCPL 76206 1843 xlarge 7
 RCVD REDY
 t:      76221 job  1860 on # 3 of server medium COMPLETED
 SENT JCPL 76221 1860 medium 3
@@ -16623,11 +16623,11 @@ RCVD REDY
 t:      76491 job  1796 on # 1 of server medium COMPLETED
 SENT JCPL 76491 1796 medium 1
 RCVD REDY
-t:      76524 job  1824 on # 1 of server xlarge COMPLETED
-SENT JCPL 76524 1824 xlarge 1
-RCVD REDY
 t:      76555 job  1861 on # 7 of server small COMPLETED
 SENT JCPL 76555 1861 small 7
+RCVD REDY
+t:      76574 job  1827 on # 3 of server xlarge COMPLETED
+SENT JCPL 76574 1827 xlarge 3
 RCVD REDY
 SENT JOBN 76580 1868 2247 12 19400 23100
 RCVD SCHD 1868 large 0
@@ -16695,8 +16695,8 @@ RCVD REDY
 t:      76876 job  1835 on # 4 of server large COMPLETED
 SENT JCPL 76876 1835 large 4
 RCVD REDY
-t:      76944 job  1785 on # 2 of server xlarge COMPLETED
-SENT JCPL 76944 1785 xlarge 2
+t:      76944 job  1785 on # 1 of server xlarge COMPLETED
+SENT JCPL 76944 1785 xlarge 1
 RCVD REDY
 t:      76963 job  1830 on # 1 of server large COMPLETED
 SENT JCPL 76963 1830 large 1
@@ -16725,9 +16725,6 @@ RCVD REDY
 t:      77157 job  1872 on # 1 of server small COMPLETED
 SENT JCPL 77157 1872 small 1
 RCVD REDY
-t:      77162 job  1827 on # 1 of server xlarge COMPLETED
-SENT JCPL 77162 1827 xlarge 1
-RCVD REDY
 t:      77176 job  1692 on # 8 of server tiny COMPLETED
 t:      77176 job  1697 on # 8 of server tiny RUNNING
 SENT JCPL 77176 1692 tiny 8
@@ -16747,8 +16744,8 @@ t:      77242 job  1874 (running) on # 2 of server medium (active) SCHEDULED
 t:      77242 job  1874 on # 2 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      77274 job  1842 on # 7 of server xlarge COMPLETED
-SENT JCPL 77274 1842 xlarge 7
+t:      77274 job  1842 on # 5 of server xlarge COMPLETED
+SENT JCPL 77274 1842 xlarge 5
 RCVD REDY
 t:      77276 job  1864 on # 2 of server large COMPLETED
 SENT JCPL 77276 1864 large 2
@@ -16904,9 +16901,9 @@ t:      77916 job  1894 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1895 11 23 6300 44900
-RCVD SCHD 1895 xlarge 3
-t:      77916 job  1895 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      77916 job  1895 on # 3 of server xlarge RUNNING
+RCVD SCHD 1895 xlarge 4
+t:      77916 job  1895 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      77916 job  1895 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1896 2464 23 50800 89900
@@ -16916,21 +16913,21 @@ t:      77916 job  1896 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1897 1501 28 3800 66000
-RCVD SCHD 1897 xlarge 6
-t:      77916 job  1897 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      77916 job  1897 on # 6 of server xlarge RUNNING
+RCVD SCHD 1897 xlarge 7
+t:      77916 job  1897 (running) on # 7 of server xlarge (active) SCHEDULED
+t:      77916 job  1897 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1898 891 31 9400 65100
-RCVD SCHD 1898 xlarge 7
-t:      77916 job  1898 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      77916 job  1898 on # 7 of server xlarge RUNNING
+RCVD SCHD 1898 xlarge 8
+t:      77916 job  1898 (running) on # 8 of server xlarge (active) SCHEDULED
+t:      77916 job  1898 on # 8 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1899 2183 32 33600 40900
-RCVD SCHD 1899 xlarge 8
-t:      77916 job  1899 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      77916 job  1899 on # 8 of server xlarge RUNNING
+RCVD SCHD 1899 xlarge 9
+t:      77916 job  1899 (running) on # 9 of server xlarge (active) SCHEDULED
+t:      77916 job  1899 on # 9 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77916 1900 371 7 1600 13200
@@ -16958,9 +16955,8 @@ t:      77924 job  1903 on # 6 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77926 1904 1893 29 28100 118000
-RCVD SCHD 1904 xlarge 9
-t:      77926 job  1904 (running) on # 9 of server xlarge (active) SCHEDULED
-t:      77926 job  1904 on # 9 of server xlarge RUNNING
+RCVD SCHD 1904 xlarge 4
+t:      77926 job  1904 (waiting) on # 4 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 77929 1905 842 8 7300 13900
@@ -16969,8 +16965,9 @@ t:      77929 job  1905 (running) on # 6 of server large (active) SCHEDULED
 t:      77929 job  1905 on # 6 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      77936 job  1895 on # 3 of server xlarge COMPLETED
-SENT JCPL 77936 1895 xlarge 3
+t:      77936 job  1895 on # 4 of server xlarge COMPLETED
+t:      77936 job  1904 on # 4 of server xlarge RUNNING
+SENT JCPL 77936 1895 xlarge 4
 RCVD REDY
 SENT JOBN 77937 1906 396 7 4800 6500
 RCVD SCHD 1906 large 0
@@ -17036,9 +17033,8 @@ t:      77949 job  1915 on # 0 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 77949 1916 1015 20 54700 75200
-RCVD SCHD 1916 xlarge 3
-t:      77949 job  1916 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      77949 job  1916 on # 3 of server xlarge RUNNING
+RCVD SCHD 1916 xlarge 8
+t:      77949 job  1916 (waiting) on # 8 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 t:      77960 job  1907 on # 3 of server small COMPLETED
@@ -17048,8 +17044,8 @@ t:      78003 job  1768 on # 7 of server tiny COMPLETED
 SENT JCPL 78003 1768 tiny 7
 RCVD REDY
 SENT JOBN 78005 1917 9160 21 18000 111300
-RCVD SCHD 1917 xlarge 0
-t:      78005 job  1917 (waiting) on # 0 of server xlarge (active) SCHEDULED
+RCVD SCHD 1917 xlarge 8
+t:      78005 job  1917 (waiting) on # 8 of server xlarge (active) SCHEDULED
 SENT OK
 RCVD REDY
 t:      78018 job  1902 on # 4 of server large COMPLETED
@@ -17058,11 +17054,15 @@ RCVD REDY
 t:      78051 job  1913 on # 0 of server medium COMPLETED
 SENT JCPL 78051 1913 medium 0
 RCVD REDY
+t:      78064 job  1732 on # 6 of server xlarge COMPLETED
+SENT JCPL 78064 1732 xlarge 6
+RCVD REDY
 t:      78357 job  1885 on # 9 of server small COMPLETED
 SENT JCPL 78357 1885 small 9
 RCVD REDY
-t:      78376 job  1898 on # 7 of server xlarge COMPLETED
-SENT JCPL 78376 1898 xlarge 7
+t:      78376 job  1898 on # 8 of server xlarge COMPLETED
+t:      78376 job  1916 on # 8 of server xlarge RUNNING
+SENT JCPL 78376 1898 xlarge 8
 RCVD REDY
 SENT JOBN 78379 1918 4592 1 500 1700
 RCVD SCHD 1918 tiny 1
@@ -17172,8 +17172,8 @@ RCVD SCHD 1927 tiny 1
 t:      79045 job  1927 (waiting) on # 1 of server tiny (active) SCHEDULED
 SENT OK
 RCVD REDY
-t:      79048 job  1897 on # 6 of server xlarge COMPLETED
-SENT JCPL 79048 1897 xlarge 6
+t:      79048 job  1897 on # 7 of server xlarge COMPLETED
+SENT JCPL 79048 1897 xlarge 7
 RCVD REDY
 t:      79078 job  1889 on # 1 of server medium COMPLETED
 SENT JCPL 79078 1889 medium 1
@@ -17190,9 +17190,6 @@ RCVD REDY
 t:      79134 job  1813 on # 9 of server medium COMPLETED
 SENT JCPL 79134 1813 medium 9
 RCVD REDY
-t:      79189 job  1904 on # 9 of server xlarge COMPLETED
-SENT JCPL 79189 1904 xlarge 9
-RCVD REDY
 SENT JOBN 79193 1929 1648 1 500 1100
 RCVD SCHD 1929 tiny 1
 t:      79193 job  1929 (waiting) on # 1 of server tiny (active) SCHEDULED
@@ -17201,14 +17198,17 @@ RCVD REDY
 t:      79194 job  1894 on # 2 of server xlarge COMPLETED
 SENT JCPL 79194 1894 xlarge 2
 RCVD REDY
+t:      79199 job  1904 on # 4 of server xlarge COMPLETED
+SENT JCPL 79199 1904 xlarge 4
+RCVD REDY
 SENT JOBN 79210 1930 1585 5 800 10100
 RCVD SCHD 1930 medium 1
 t:      79210 job  1930 (running) on # 1 of server medium (active) SCHEDULED
 t:      79210 job  1930 on # 1 of server medium RUNNING
 SENT OK
 RCVD REDY
-t:      79232 job  1828 on # 4 of server xlarge COMPLETED
-SENT JCPL 79232 1828 xlarge 4
+t:      79232 job  1828 on # 3 of server xlarge COMPLETED
+SENT JCPL 79232 1828 xlarge 3
 RCVD REDY
 t:      79235 job  1893 on # 1 of server xlarge COMPLETED
 SENT JCPL 79235 1893 xlarge 1
@@ -17258,7 +17258,6 @@ t:      79487 job  1914 on # 0 of server large COMPLETED
 SENT JCPL 79487 1914 large 0
 RCVD REDY
 t:      79501 job  1892 on # 0 of server xlarge COMPLETED
-t:      79501 job  1917 on # 0 of server xlarge RUNNING
 SENT JCPL 79501 1892 xlarge 0
 RCVD REDY
 SENT JOBN 79504 1935 545 7 4400 11100
@@ -17354,8 +17353,8 @@ t:      79846 job  1947 (running) on # 5 of server small (active) SCHEDULED
 t:      79846 job  1947 on # 5 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      79853 job  1822 on # 3 of server xlarge COMPLETED
-SENT JCPL 79853 1822 xlarge 3
+t:      79853 job  1822 on # 2 of server xlarge COMPLETED
+SENT JCPL 79853 1822 xlarge 2
 RCVD REDY
 t:      79871 job  1857 on # 3 of server medium COMPLETED
 SENT JCPL 79871 1857 medium 3
@@ -17381,39 +17380,39 @@ t:      79897 job  1950 on # 8 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79897 1951 2620 24 20600 35000
-RCVD SCHD 1951 xlarge 1
-t:      79897 job  1951 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      79897 job  1951 on # 1 of server xlarge RUNNING
+RCVD SCHD 1951 xlarge 0
+t:      79897 job  1951 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      79897 job  1951 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79897 1952 2063 19 3700 5900
-RCVD SCHD 1952 xlarge 2
-t:      79897 job  1952 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      79897 job  1952 on # 2 of server xlarge RUNNING
+RCVD SCHD 1952 xlarge 1
+t:      79897 job  1952 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      79897 job  1952 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79897 1953 2891 23 58900 6800
-RCVD SCHD 1953 xlarge 4
-t:      79897 job  1953 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      79897 job  1953 on # 4 of server xlarge RUNNING
+RCVD SCHD 1953 xlarge 2
+t:      79897 job  1953 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      79897 job  1953 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79897 1954 1172 27 34100 53700
-RCVD SCHD 1954 xlarge 6
-t:      79897 job  1954 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      79897 job  1954 on # 6 of server xlarge RUNNING
+RCVD SCHD 1954 xlarge 3
+t:      79897 job  1954 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      79897 job  1954 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79897 1955 2831 30 86400 231800
-RCVD SCHD 1955 xlarge 7
-t:      79897 job  1955 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      79897 job  1955 on # 7 of server xlarge RUNNING
+RCVD SCHD 1955 xlarge 4
+t:      79897 job  1955 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      79897 job  1955 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79900 1956 1745 31 97900 199000
-RCVD SCHD 1956 xlarge 9
-t:      79900 job  1956 (running) on # 9 of server xlarge (active) SCHEDULED
-t:      79900 job  1956 on # 9 of server xlarge RUNNING
+RCVD SCHD 1956 xlarge 6
+t:      79900 job  1956 (running) on # 6 of server xlarge (active) SCHEDULED
+t:      79900 job  1956 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 79905 1957 27 1 1000 400
@@ -17472,8 +17471,8 @@ t:      79939 job  1965 (running) on # 3 of server large (active) SCHEDULED
 t:      79939 job  1965 on # 3 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      79940 job  1899 on # 8 of server xlarge COMPLETED
-SENT JCPL 79940 1899 xlarge 8
+t:      79940 job  1899 on # 9 of server xlarge COMPLETED
+SENT JCPL 79940 1899 xlarge 9
 RCVD REDY
 SENT JOBN 79940 1966 5113 4 1000 5600
 RCVD SCHD 1966 large 4
@@ -17601,18 +17600,15 @@ RCVD SCHD 1980 tiny 1
 t:      80319 job  1980 (waiting) on # 1 of server tiny (active) SCHEDULED
 SENT OK
 RCVD REDY
-t:      80340 job  1916 on # 3 of server xlarge COMPLETED
-SENT JCPL 80340 1916 xlarge 3
-RCVD REDY
 SENT JOBN 80348 1981 6659 1 300 500
 RCVD SCHD 1981 tiny 1
 t:      80348 job  1981 (waiting) on # 1 of server tiny (active) SCHEDULED
 SENT OK
 RCVD REDY
 SENT JOBN 80363 1982 2329 11 15000 25200
-RCVD SCHD 1982 xlarge 2
-t:      80363 job  1982 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      80363 job  1982 on # 2 of server xlarge RUNNING
+RCVD SCHD 1982 xlarge 1
+t:      80363 job  1982 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      80363 job  1982 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 80421 1983 3457 2 1400 1800
@@ -17640,13 +17636,13 @@ t:      80511 job  1986 on # 2 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 80567 1987 1329 4 2200 5100
-RCVD SCHD 1987 xlarge 1
-t:      80567 job  1987 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      80567 job  1987 on # 1 of server xlarge RUNNING
+RCVD SCHD 1987 xlarge 2
+t:      80567 job  1987 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      80567 job  1987 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      80589 job  1954 on # 6 of server xlarge COMPLETED
-SENT JCPL 80589 1954 xlarge 6
+t:      80589 job  1954 on # 3 of server xlarge COMPLETED
+SENT JCPL 80589 1954 xlarge 3
 RCVD REDY
 t:      80600 job  1961 on # 3 of server medium COMPLETED
 SENT JCPL 80600 1961 medium 3
@@ -17683,6 +17679,10 @@ RCVD SCHD 1991 xlarge 3
 t:      80753 job  1991 (running) on # 3 of server xlarge (active) SCHEDULED
 t:      80753 job  1991 on # 3 of server xlarge RUNNING
 SENT OK
+RCVD REDY
+t:      80767 job  1916 on # 8 of server xlarge COMPLETED
+t:      80767 job  1917 on # 8 of server xlarge RUNNING
+SENT JCPL 80767 1916 xlarge 8
 RCVD REDY
 SENT JOBN 80797 1992 31 1 500 1100
 RCVD SCHD 1992 tiny 1
@@ -17733,8 +17733,8 @@ t:      81201 job  1997 (running) on # 1 of server small (active) SCHEDULED
 t:      81201 job  1997 on # 1 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      81251 job  1951 on # 1 of server xlarge COMPLETED
-SENT JCPL 81251 1951 xlarge 1
+t:      81251 job  1951 on # 0 of server xlarge COMPLETED
+SENT JCPL 81251 1951 xlarge 0
 RCVD REDY
 t:      81280 job  1900 on # 9 of server medium COMPLETED
 SENT JCPL 81280 1900 medium 9
@@ -17754,8 +17754,8 @@ RCVD REDY
 t:      81349 job  1997 on # 1 of server small COMPLETED
 SENT JCPL 81349 1997 small 1
 RCVD REDY
-t:      81349 job  1952 on # 2 of server xlarge COMPLETED
-SENT JCPL 81349 1952 xlarge 2
+t:      81349 job  1952 on # 1 of server xlarge COMPLETED
+SENT JCPL 81349 1952 xlarge 1
 RCVD REDY
 SENT JOBN 81359 1999 1577 8 2700 14600
 RCVD SCHD 1999 xlarge 0
@@ -17775,20 +17775,20 @@ RCVD REDY
 t:      81364 job  1939 on # 2 of server tiny COMPLETED
 SENT JCPL 81364 1939 tiny 2
 RCVD REDY
-t:      81412 job  1953 on # 4 of server xlarge COMPLETED
-SENT JCPL 81412 1953 xlarge 4
+t:      81412 job  1953 on # 2 of server xlarge COMPLETED
+SENT JCPL 81412 1953 xlarge 2
 RCVD REDY
 SENT JOBN 81462 2001 15 12 1700 48800
-RCVD SCHD 2001 xlarge 1
-t:      81462 job  2001 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      81462 job  2001 on # 1 of server xlarge RUNNING
+RCVD SCHD 2001 xlarge 0
+t:      81462 job  2001 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      81462 job  2001 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      81468 job  1933 on # 4 of server medium COMPLETED
 SENT JCPL 81468 1933 medium 4
 RCVD REDY
-t:      81483 job  2001 on # 1 of server xlarge COMPLETED
-SENT JCPL 81483 2001 xlarge 1
+t:      81483 job  2001 on # 0 of server xlarge COMPLETED
+SENT JCPL 81483 2001 xlarge 0
 RCVD REDY
 SENT JOBN 81513 2002 1733 1 100 1500
 RCVD SCHD 2002 tiny 1
@@ -17799,9 +17799,9 @@ t:      81563 job  1949 on # 7 of server small COMPLETED
 SENT JCPL 81563 1949 small 7
 RCVD REDY
 SENT JOBN 81565 2003 3500 14 20700 44000
-RCVD SCHD 2003 xlarge 1
-t:      81565 job  2003 (running) on # 1 of server xlarge (active) SCHEDULED
-t:      81565 job  2003 on # 1 of server xlarge RUNNING
+RCVD SCHD 2003 xlarge 0
+t:      81565 job  2003 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      81565 job  2003 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 81623 2004 1240 1 900 300
@@ -17845,8 +17845,8 @@ t:      81892 job  2007 (running) on # 1 of server small (active) SCHEDULED
 t:      81892 job  2007 on # 1 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      81937 job  1982 on # 2 of server xlarge COMPLETED
-SENT JCPL 81937 1982 xlarge 2
+t:      81937 job  1982 on # 1 of server xlarge COMPLETED
+SENT JCPL 81937 1982 xlarge 1
 RCVD REDY
 t:      81996 job  1989 on # 8 of server tiny COMPLETED
 SENT JCPL 81996 1989 tiny 8
@@ -17889,8 +17889,8 @@ RCVD REDY
 t:      82316 job  2007 on # 1 of server small COMPLETED
 SENT JCPL 82316 2007 small 1
 RCVD REDY
-t:      82336 job  1987 on # 1 of server xlarge COMPLETED
-SENT JCPL 82336 1987 xlarge 1
+t:      82336 job  1987 on # 2 of server xlarge COMPLETED
+SENT JCPL 82336 1987 xlarge 2
 RCVD REDY
 t:      82342 job  1855 on # 7 of server medium COMPLETED
 SENT JCPL 82342 1855 medium 7
@@ -18029,8 +18029,8 @@ t:      83232 job  2026 (running) on # 8 of server small (active) SCHEDULED
 t:      83232 job  2026 on # 8 of server small RUNNING
 SENT OK
 RCVD REDY
-t:      83247 job  1955 on # 7 of server xlarge COMPLETED
-SENT JCPL 83247 1955 xlarge 7
+t:      83247 job  1955 on # 4 of server xlarge COMPLETED
+SENT JCPL 83247 1955 xlarge 4
 RCVD REDY
 t:      83257 job  1991 on # 3 of server xlarge COMPLETED
 SENT JCPL 83257 1991 xlarge 3
@@ -18052,8 +18052,8 @@ RCVD REDY
 t:      83324 job  2013 on # 0 of server medium COMPLETED
 SENT JCPL 83324 2013 medium 0
 RCVD REDY
-t:      83324 job  1956 on # 9 of server xlarge COMPLETED
-SENT JCPL 83324 1956 xlarge 9
+t:      83324 job  1956 on # 6 of server xlarge COMPLETED
+SENT JCPL 83324 1956 xlarge 6
 RCVD REDY
 SENT JOBN 83361 2029 97 2 1300 2800
 RCVD SCHD 2029 tiny 9
@@ -18261,9 +18261,9 @@ t:      83588 job  2057 on # 7 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83588 2058 26 16 14500 29900
-RCVD SCHD 2058 xlarge 3
-t:      83588 job  2058 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      83588 job  2058 on # 3 of server xlarge RUNNING
+RCVD SCHD 2058 xlarge 0
+t:      83588 job  2058 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      83588 job  2058 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83588 2059 796 1 400 700
@@ -18284,15 +18284,15 @@ t:      83590 job  2061 on # 7 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83592 2062 1299 13 25100 45300
-RCVD SCHD 2062 xlarge 4
-t:      83592 job  2062 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      83592 job  2062 on # 4 of server xlarge RUNNING
+RCVD SCHD 2062 xlarge 1
+t:      83592 job  2062 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      83592 job  2062 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83592 2063 561 13 19000 6400
-RCVD SCHD 2063 xlarge 4
-t:      83592 job  2063 (running) on # 4 of server xlarge (active) SCHEDULED
-t:      83592 job  2063 on # 4 of server xlarge RUNNING
+RCVD SCHD 2063 xlarge 3
+t:      83592 job  2063 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      83592 job  2063 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83593 2064 43 3 1000 3700
@@ -18330,15 +18330,15 @@ t:      83605 job  2069 on # 9 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83607 2070 3420 8 2000 9000
-RCVD SCHD 2070 xlarge 0
-t:      83607 job  2070 (running) on # 0 of server xlarge (active) SCHEDULED
-t:      83607 job  2070 on # 0 of server xlarge RUNNING
+RCVD SCHD 2070 xlarge 2
+t:      83607 job  2070 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      83607 job  2070 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83610 2071 1023 5 4800 9500
-RCVD SCHD 2071 xlarge 2
-t:      83610 job  2071 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      83610 job  2071 on # 2 of server xlarge RUNNING
+RCVD SCHD 2071 xlarge 3
+t:      83610 job  2071 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      83610 job  2071 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83610 2072 114 7 900 7400
@@ -18354,15 +18354,15 @@ t:      83614 job  2073 on # 9 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83615 2074 794 9 7500 7000
-RCVD SCHD 2074 xlarge 5
-t:      83615 job  2074 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      83615 job  2074 on # 5 of server xlarge RUNNING
+RCVD SCHD 2074 xlarge 4
+t:      83615 job  2074 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      83615 job  2074 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83615 2075 4350 10 1600 26500
-RCVD SCHD 2075 xlarge 5
-t:      83615 job  2075 (running) on # 5 of server xlarge (active) SCHEDULED
-t:      83615 job  2075 on # 5 of server xlarge RUNNING
+RCVD SCHD 2075 xlarge 4
+t:      83615 job  2075 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      83615 job  2075 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      83620 job  2068 on # 7 of server tiny COMPLETED
@@ -18378,9 +18378,9 @@ t:      83621 job  2076 on # 6 of server large RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83622 2077 11191 4 4200 7900
-RCVD SCHD 2077 xlarge 2
-t:      83622 job  2077 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      83622 job  2077 on # 2 of server xlarge RUNNING
+RCVD SCHD 2077 xlarge 4
+t:      83622 job  2077 (running) on # 4 of server xlarge (active) SCHEDULED
+t:      83622 job  2077 on # 4 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83626 2078 7455 1 1000 800
@@ -18395,9 +18395,9 @@ t:      83627 job  2079 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83630 2080 533 3 1500 5000
-RCVD SCHD 2080 xlarge 0
-t:      83630 job  2080 (running) on # 0 of server xlarge (active) SCHEDULED
-t:      83630 job  2080 on # 0 of server xlarge RUNNING
+RCVD SCHD 2080 xlarge 1
+t:      83630 job  2080 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      83630 job  2080 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      83633 job  2018 on # 1 of server small COMPLETED
@@ -18410,9 +18410,9 @@ t:      83636 job  2081 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83637 2082 470 16 16300 54100
-RCVD SCHD 2082 xlarge 7
-t:      83637 job  2082 (running) on # 7 of server xlarge (active) SCHEDULED
-t:      83637 job  2082 on # 7 of server xlarge RUNNING
+RCVD SCHD 2082 xlarge 5
+t:      83637 job  2082 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      83637 job  2082 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83641 2083 616 14 17900 37500
@@ -18421,8 +18421,8 @@ t:      83641 job  2083 (running) on # 7 of server xlarge (active) SCHEDULED
 t:      83641 job  2083 on # 7 of server xlarge RUNNING
 SENT OK
 RCVD REDY
-t:      83650 job  2058 on # 3 of server xlarge COMPLETED
-SENT JCPL 83650 2058 xlarge 3
+t:      83650 job  2058 on # 0 of server xlarge COMPLETED
+SENT JCPL 83650 2058 xlarge 0
 RCVD REDY
 SENT JOBN 83660 2084 1021 1 600 1200
 RCVD SCHD 2084 tiny 1
@@ -18441,9 +18441,9 @@ t:      83679 job  1344 on # 1 of server tiny RUNNING
 SENT JCPL 83679 1339 tiny 1
 RCVD REDY
 SENT JOBN 83683 2085 811 15 22500 49000
-RCVD SCHD 2085 xlarge 2
-t:      83683 job  2085 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      83683 job  2085 on # 2 of server xlarge RUNNING
+RCVD SCHD 2085 xlarge 0
+t:      83683 job  2085 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      83683 job  2085 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83689 2086 126 5 600 2600
@@ -18465,9 +18465,9 @@ t:      83721 job  2088 on # 1 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83744 2089 1728 3 1000 400
-RCVD SCHD 2089 xlarge 2
-t:      83744 job  2089 (running) on # 2 of server xlarge (active) SCHEDULED
-t:      83744 job  2089 on # 2 of server xlarge RUNNING
+RCVD SCHD 2089 xlarge 0
+t:      83744 job  2089 (running) on # 0 of server xlarge (active) SCHEDULED
+t:      83744 job  2089 on # 0 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83750 2090 2255 1 1000 1400
@@ -18477,9 +18477,9 @@ t:      83750 job  2090 on # 2 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83755 2091 4250 11 16900 37000
-RCVD SCHD 2091 xlarge 3
-t:      83755 job  2091 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      83755 job  2091 on # 3 of server xlarge RUNNING
+RCVD SCHD 2091 xlarge 2
+t:      83755 job  2091 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      83755 job  2091 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83770 2092 2645 10 2000 40000
@@ -18489,9 +18489,9 @@ t:      83770 job  2092 on # 6 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 83782 2093 3348 4 800 3300
-RCVD SCHD 2093 xlarge 3
-t:      83782 job  2093 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      83782 job  2093 on # 3 of server xlarge RUNNING
+RCVD SCHD 2093 xlarge 2
+t:      83782 job  2093 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      83782 job  2093 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      83809 job  1994 on # 3 of server medium COMPLETED
@@ -18539,11 +18539,11 @@ t:      83954 job  2099 (running) on # 8 of server large (active) SCHEDULED
 t:      83954 job  2099 on # 8 of server large RUNNING
 SENT OK
 RCVD REDY
-t:      83984 job  2080 on # 0 of server xlarge COMPLETED
-SENT JCPL 83984 2080 xlarge 0
+t:      83984 job  2080 on # 1 of server xlarge COMPLETED
+SENT JCPL 83984 2080 xlarge 1
 RCVD REDY
-t:      84045 job  2082 on # 7 of server xlarge COMPLETED
-SENT JCPL 84045 2082 xlarge 7
+t:      84045 job  2082 on # 5 of server xlarge COMPLETED
+SENT JCPL 84045 2082 xlarge 5
 RCVD REDY
 t:      84081 job  2054 on # 5 of server tiny COMPLETED
 SENT JCPL 84081 2054 tiny 5
@@ -18555,9 +18555,9 @@ t:      84094 job  2100 on # 5 of server tiny RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 84106 2101 1881 4 3600 3100
-RCVD SCHD 2101 xlarge 3
-t:      84106 job  2101 (running) on # 3 of server xlarge (active) SCHEDULED
-t:      84106 job  2101 on # 3 of server xlarge RUNNING
+RCVD SCHD 2101 xlarge 2
+t:      84106 job  2101 (running) on # 2 of server xlarge (active) SCHEDULED
+t:      84106 job  2101 on # 2 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      84139 job  2016 on # 3 of server tiny COMPLETED
@@ -18572,22 +18572,19 @@ RCVD REDY
 t:      84175 job  2100 on # 5 of server tiny COMPLETED
 SENT JCPL 84175 2100 tiny 5
 RCVD REDY
-t:      84189 job  1917 on # 0 of server xlarge COMPLETED
-SENT JCPL 84189 1917 xlarge 0
-RCVD REDY
 t:      84193 job  2087 on # 7 of server tiny COMPLETED
 SENT JCPL 84193 2087 tiny 7
 RCVD REDY
-t:      84212 job  2063 on # 4 of server xlarge COMPLETED
-SENT JCPL 84212 2063 xlarge 4
+t:      84212 job  2063 on # 3 of server xlarge COMPLETED
+SENT JCPL 84212 2063 xlarge 3
 RCVD REDY
 t:      84220 job  2069 on # 9 of server small COMPLETED
 SENT JCPL 84220 2069 small 9
 RCVD REDY
 SENT JOBN 84252 2103 3774 4 800 3700
-RCVD SCHD 2103 xlarge 0
-t:      84252 job  2103 (running) on # 0 of server xlarge (active) SCHEDULED
-t:      84252 job  2103 on # 0 of server xlarge RUNNING
+RCVD SCHD 2103 xlarge 3
+t:      84252 job  2103 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      84252 job  2103 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      84285 job  1891 on # 1 of server large COMPLETED
@@ -18627,9 +18624,9 @@ t:      84474 job  2052 on # 4 of server large COMPLETED
 SENT JCPL 84474 2052 large 4
 RCVD REDY
 SENT JOBN 84562 2108 6688 7 5700 3700
-RCVD SCHD 2108 xlarge 0
-t:      84562 job  2108 (running) on # 0 of server xlarge (active) SCHEDULED
-t:      84562 job  2108 on # 0 of server xlarge RUNNING
+RCVD SCHD 2108 xlarge 3
+t:      84562 job  2108 (running) on # 3 of server xlarge (active) SCHEDULED
+t:      84562 job  2108 on # 3 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 84578 2109 2887 2 1500 4100
@@ -18639,24 +18636,24 @@ t:      84578 job  2109 on # 9 of server small RUNNING
 SENT OK
 RCVD REDY
 SENT JOBN 84579 2110 109 16 6000 63000
-RCVD SCHD 2110 xlarge 6
-t:      84579 job  2110 (running) on # 6 of server xlarge (active) SCHEDULED
-t:      84579 job  2110 on # 6 of server xlarge RUNNING
+RCVD SCHD 2110 xlarge 5
+t:      84579 job  2110 (running) on # 5 of server xlarge (active) SCHEDULED
+t:      84579 job  2110 on # 5 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      84659 job  2012 on # 1 of server xlarge COMPLETED
 SENT JCPL 84659 2012 xlarge 1
 RCVD REDY
-t:      84663 job  2110 on # 6 of server xlarge COMPLETED
-SENT JCPL 84663 2110 xlarge 6
+t:      84663 job  2110 on # 5 of server xlarge COMPLETED
+SENT JCPL 84663 2110 xlarge 5
 RCVD REDY
 t:      84680 job  2030 on # 0 of server medium COMPLETED
 SENT JCPL 84680 2030 medium 0
 RCVD REDY
 SENT JOBN 84686 2111 4558 11 21900 39600
-RCVD SCHD 2111 xlarge 0
-t:      84686 job  2111 (running) on # 0 of server xlarge (active) SCHEDULED
-t:      84686 job  2111 on # 0 of server xlarge RUNNING
+RCVD SCHD 2111 xlarge 1
+t:      84686 job  2111 (running) on # 1 of server xlarge (active) SCHEDULED
+t:      84686 job  2111 on # 1 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      84703 job  2023 on # 8 of server tiny COMPLETED
@@ -18687,9 +18684,9 @@ t:      84964 job  1932 on # 0 of server small COMPLETED
 SENT JCPL 84964 1932 small 0
 RCVD REDY
 SENT JOBN 84967 2113 1809 26 48900 80100
-RCVD SCHD 2113 xlarge 8
-t:      84967 job  2113 (running) on # 8 of server xlarge (active) SCHEDULED
-t:      84967 job  2113 on # 8 of server xlarge RUNNING
+RCVD SCHD 2113 xlarge 9
+t:      84967 job  2113 (running) on # 9 of server xlarge (active) SCHEDULED
+t:      84967 job  2113 on # 9 of server xlarge RUNNING
 SENT OK
 RCVD REDY
 t:      84986 job  2008 on # 4 of server small COMPLETED
@@ -18758,8 +18755,11 @@ RCVD REDY
 t:      85428 job  2014 on # 2 of server tiny COMPLETED
 SENT JCPL 85428 2014 tiny 2
 RCVD REDY
-t:      85434 job  2074 on # 5 of server xlarge COMPLETED
-SENT JCPL 85434 2074 xlarge 5
+t:      85434 job  2074 on # 4 of server xlarge COMPLETED
+SENT JCPL 85434 2074 xlarge 4
+RCVD REDY
+t:      85455 job  1917 on # 8 of server xlarge COMPLETED
+SENT JCPL 85455 1917 xlarge 8
 RCVD REDY
 SENT JOBN 85477 2117 1931 4 1800 5500
 RCVD SCHD 2117 small 0
@@ -18782,11 +18782,11 @@ RCVD REDY
 t:      85563 job  2009 on # 0 of server large COMPLETED
 SENT JCPL 85563 2009 large 0
 RCVD REDY
-t:      85630 job  2089 on # 2 of server xlarge COMPLETED
-SENT JCPL 85630 2089 xlarge 2
+t:      85630 job  2089 on # 0 of server xlarge COMPLETED
+SENT JCPL 85630 2089 xlarge 0
 RCVD REDY
-t:      85634 job  2003 on # 1 of server xlarge COMPLETED
-SENT JCPL 85634 2003 xlarge 1
+t:      85634 job  2003 on # 0 of server xlarge COMPLETED
+SENT JCPL 85634 2003 xlarge 0
 RCVD REDY
 SENT JOBN 85634 2118 2606 4 1700 3700
 RCVD SCHD 2118 small 1
@@ -18821,11 +18821,11 @@ t:      85865 job  2121 (running) on # 2 of server tiny (active) SCHEDULED
 t:      85865 job  2121 on # 2 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      85873 job  2093 on # 3 of server xlarge COMPLETED
-SENT JCPL 85873 2093 xlarge 3
+t:      85873 job  2093 on # 2 of server xlarge COMPLETED
+SENT JCPL 85873 2093 xlarge 2
 RCVD REDY
-t:      85879 job  2101 on # 3 of server xlarge COMPLETED
-SENT JCPL 85879 2101 xlarge 3
+t:      85879 job  2101 on # 2 of server xlarge COMPLETED
+SENT JCPL 85879 2101 xlarge 2
 RCVD REDY
 SENT JOBN 85899 2122 266 3 1600 4000
 RCVD SCHD 2122 small 2
@@ -18881,8 +18881,8 @@ t:      86197 job  2128 (running) on # 4 of server tiny (active) SCHEDULED
 t:      86197 job  2128 on # 4 of server tiny RUNNING
 SENT OK
 RCVD REDY
-t:      86228 job  2062 on # 4 of server xlarge COMPLETED
-SENT JCPL 86228 2062 xlarge 4
+t:      86228 job  2062 on # 1 of server xlarge COMPLETED
+SENT JCPL 86228 2062 xlarge 1
 RCVD REDY
 SENT JOBN 86243 2129 5255 8 5300 4100
 RCVD SCHD 2129 medium 7
@@ -18932,8 +18932,8 @@ RCVD REDY
 t:      86496 job  2037 on # 6 of server medium COMPLETED
 SENT JCPL 86496 2037 medium 6
 RCVD REDY
-t:      86498 job  2085 on # 2 of server xlarge COMPLETED
-SENT JCPL 86498 2085 xlarge 2
+t:      86498 job  2085 on # 0 of server xlarge COMPLETED
+SENT JCPL 86498 2085 xlarge 0
 RCVD REDY
 t:      86525 job  2048 on # 5 of server large COMPLETED
 SENT JCPL 86525 2048 large 5
@@ -18941,8 +18941,8 @@ RCVD REDY
 t:      86541 job  2083 on # 7 of server xlarge COMPLETED
 SENT JCPL 86541 2083 xlarge 7
 RCVD REDY
-t:      86556 job  2075 on # 5 of server xlarge COMPLETED
-SENT JCPL 86556 2075 xlarge 5
+t:      86556 job  2075 on # 4 of server xlarge COMPLETED
+SENT JCPL 86556 2075 xlarge 4
 RCVD REDY
 t:      86608 job  2099 on # 8 of server large COMPLETED
 SENT JCPL 86608 2099 large 8
@@ -18950,8 +18950,8 @@ RCVD REDY
 t:      86617 job  2025 on # 1 of server medium COMPLETED
 SENT JCPL 86617 2025 medium 1
 RCVD REDY
-t:      86643 job  2091 on # 3 of server xlarge COMPLETED
-SENT JCPL 86643 2091 xlarge 3
+t:      86643 job  2091 on # 2 of server xlarge COMPLETED
+SENT JCPL 86643 2091 xlarge 2
 RCVD REDY
 t:      86704 job  2024 on # 7 of server small COMPLETED
 SENT JCPL 86704 2024 small 7
@@ -18974,11 +18974,11 @@ RCVD REDY
 t:      87011 job  2086 on # 2 of server xlarge COMPLETED
 SENT JCPL 87011 2086 xlarge 2
 RCVD REDY
-t:      87070 job  2070 on # 0 of server xlarge COMPLETED
-SENT JCPL 87070 2070 xlarge 0
+t:      87070 job  2070 on # 2 of server xlarge COMPLETED
+SENT JCPL 87070 2070 xlarge 2
 RCVD REDY
-t:      87088 job  2071 on # 2 of server xlarge COMPLETED
-SENT JCPL 87088 2071 xlarge 2
+t:      87088 job  2071 on # 3 of server xlarge COMPLETED
+SENT JCPL 87088 2071 xlarge 3
 RCVD REDY
 t:      87102 job  2043 on # 2 of server large COMPLETED
 SENT JCPL 87102 2043 large 2
@@ -19001,8 +19001,8 @@ RCVD REDY
 t:      87542 job  2034 on # 3 of server medium COMPLETED
 SENT JCPL 87542 2034 medium 3
 RCVD REDY
-t:      87593 job  2103 on # 0 of server xlarge COMPLETED
-SENT JCPL 87593 2103 xlarge 0
+t:      87593 job  2103 on # 3 of server xlarge COMPLETED
+SENT JCPL 87593 2103 xlarge 3
 RCVD REDY
 t:      87620 job  2118 on # 1 of server small COMPLETED
 SENT JCPL 87620 2118 small 1
@@ -19032,8 +19032,8 @@ RCVD REDY
 t:      87917 job  2115 on # 5 of server tiny COMPLETED
 SENT JCPL 87917 2115 tiny 5
 RCVD REDY
-t:      87970 job  2108 on # 0 of server xlarge COMPLETED
-SENT JCPL 87970 2108 xlarge 0
+t:      87970 job  2108 on # 3 of server xlarge COMPLETED
+SENT JCPL 87970 2108 xlarge 3
 RCVD REDY
 t:      87984 job  2109 on # 9 of server small COMPLETED
 SENT JCPL 87984 2109 small 9
@@ -19041,11 +19041,11 @@ RCVD REDY
 t:      88006 job  2123 on # 0 of server medium COMPLETED
 SENT JCPL 88006 2123 medium 0
 RCVD REDY
-t:      88139 job  2113 on # 8 of server xlarge COMPLETED
-SENT JCPL 88139 2113 xlarge 8
+t:      88139 job  2113 on # 9 of server xlarge COMPLETED
+SENT JCPL 88139 2113 xlarge 9
 RCVD REDY
-t:      88168 job  2111 on # 0 of server xlarge COMPLETED
-SENT JCPL 88168 2111 xlarge 0
+t:      88168 job  2111 on # 1 of server xlarge COMPLETED
+SENT JCPL 88168 2111 xlarge 1
 RCVD REDY
 t:      88176 job  1341 on # 1 of server tiny COMPLETED
 t:      88176 job  1877 on # 1 of server tiny RUNNING
@@ -19088,8 +19088,8 @@ RCVD REDY
 t:      89542 job  2132 on # 6 of server large COMPLETED
 SENT JCPL 89542 2132 large 6
 RCVD REDY
-t:      89686 job  2077 on # 2 of server xlarge COMPLETED
-SENT JCPL 89686 2077 xlarge 2
+t:      89686 job  2077 on # 4 of server xlarge COMPLETED
+SENT JCPL 89686 2077 xlarge 4
 RCVD REDY
 t:      89777 job  2039 on # 8 of server medium COMPLETED
 SENT JCPL 89777 2039 medium 8
@@ -19231,8 +19231,8 @@ SENT QUIT
 # 10 small servers used with a utilisation of 88.10 at the cost of $97.66
 # 10 medium servers used with a utilisation of 88.95 at the cost of $194.30
 # 10 large servers used with a utilisation of 86.34 at the cost of $392.14
-# 10 xlarge servers used with a utilisation of 72.65 at the cost of $768.95
+# 10 xlarge servers used with a utilisation of 73.14 at the cost of $770.27
 # ==================================== [ Summary ] ====================================
 # actual simulation end time: 121463, #jobs: 2135 (failed 0 times)
-# total #servers used: 50, avg util: 84.11% (ef. usage: 84.30%), total cost: $1503.54
-# avg waiting time: 512, avg exec time: 2381, avg turnaround time: 2893
+# total #servers used: 50, avg util: 84.20% (ef. usage: 84.36%), total cost: $1504.86
+# avg waiting time: 536, avg exec time: 2381, avg turnaround time: 2917
